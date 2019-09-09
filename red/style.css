@@ -22,7 +22,7 @@
 
 /* 背景色 */
 body {
-  background-color: #E3F2FD;
+  background-color: #FFEBEE;
 }
 
 /* #region フッターの浮き上がり防止。 */
@@ -43,7 +43,7 @@ body {
 /* #endregion */
 /* #region ヘッダー */
 #header {
-  background-color: #3e64ff;
+  background-color: #D50000;
 }
 
 #header .tagline, #header .site-name-text {
@@ -53,11 +53,11 @@ body {
 /* #endregion */
 /* #region ナビゲーションバー */
 #navi {
-  background-color: #2196F3;
+  background-color: #F44336;
 }
 
 #navi a:hover {
-  background-color: #2196F3;
+  background-color: #F44336;
 }
 
 #navi .item-label {
@@ -106,7 +106,7 @@ body {
 /* #endregion */
 /* #region サイドバー */
 #sidebar-menu-content h3, #sidebar h3 {
-  background-color: #3e64ff;
+  background-color: #D50000;
   color: white;
   padding: 5px 5px 5px 42px;
   line-height: 2.5;
@@ -136,11 +136,11 @@ body {
 #sidebar .search-edit, #search-menu-content .search-edit, #slide-in-sidebar .search-edit {
   border-width: 0 0 2px 0;
   border-radius: 0;
-  border-bottom: 2px solid #2196F3;
+  border-bottom: 2px solid #F44336;
 }
 
 #sidebar .search-edit:focus, #search-menu-content .search-edit:focus, #slide-in-sidebar .search-edit:focus {
-  background-color: #E3F2FD;
+  background-color: #FFEBEE;
   transition: all 0.3s ease;
 }
 
@@ -149,7 +149,7 @@ body {
 }
 
 #sidebar .search-submit:hover, #search-menu-content .search-submit:hover, #slide-in-sidebar .search-submit:hover {
-  color: #2196F3;
+  color: #F44336;
 }
 
 /* #endregion */
@@ -182,13 +182,13 @@ body {
 /* #region メニュー */
 #toc {
   color: white;
-  border: 1px solid #2196F3;
+  border: 1px solid #F44336;
   padding: 0px;
 }
 
 #toc .toc-title {
   padding: 0em;
-  background-color: #2196F3;
+  background-color: #F44336;
 }
 
 #toc .toc-list {
@@ -199,13 +199,13 @@ body {
 /* #endregion */
 /* #region 見出し */
 #main .article h1 {
-  background: linear-gradient(to right, #3e64ff, #2196F3);
+  background: linear-gradient(to right, #D50000, #F44336);
   color: white;
   padding: 1em;
 }
 
 #main .article h2, #main .article h3, #main .article h4 {
-  background: linear-gradient(to right, #3e64ff, #2196F3);
+  background: linear-gradient(to right, #D50000, #F44336);
   position: relative;
   color: transparent;
   background-clip: text;
@@ -217,7 +217,7 @@ body {
 }
 
 #main .article h2::after {
-  background: linear-gradient(to right, #3e64ff, #2196F3);
+  background: linear-gradient(to right, #D50000, #F44336);
   position: absolute;
   content: "";
   top: auto;
@@ -233,7 +233,7 @@ body {
 }
 
 #main .article h3::after {
-  background: linear-gradient(to right, #3e64ff, #2196F3);
+  background: linear-gradient(to right, #D50000, #F44336);
   position: absolute;
   content: "";
   top: auto;
@@ -263,30 +263,30 @@ body {
 /* #endregion */
 /* #region コメント */
 #commentform #comment {
-  border: 1px solid #2196F3;
+  border: 1px solid #F44336;
   border-radius: 0;
   transition: all 0.3s ease;
 }
 
 #commentform #comment:focus {
-  background-color: #E3F2FD;
+  background-color: #FFEBEE;
 }
 
 #commentform #comment #author, #commentform #comment #email, #commentform #comment #url {
   border-width: 0 0 2px 0;
   border-radius: 0;
-  border-bottom: 2px solid #2196F3;
+  border-bottom: 2px solid #F44336;
 }
 
 #commentform #comment #author:focus, #commentform #comment #email:focus, #commentform #comment #url:focus {
-  background-color: #E3F2FD;
+  background-color: #FFEBEE;
   transition: all 0.3s ease;
 }
 
 #commentform #submit {
-  background-color: #2196F3;
+  background-color: #F44336;
   border-radius: 5px;
-  color: #E3F2FD;
+  color: #FFEBEE;
   border: none;
 }
 
