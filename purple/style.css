@@ -94,11 +94,11 @@ body {
   border-radius: 50%;
 }
 
-#go-to-top .go-to-top-button .fa-arrow-up {
+#go-to-top .go-to-top-button .fa {
   color: white;
 }
 
-#go-to-top .go-to-top-button .fa-arrow-up:hover {
+#go-to-top .go-to-top-button .fa:hover {
   transform: rotate(360deg);
   transition: 0.2s;
 }
@@ -263,6 +263,13 @@ body {
 /* #region SNSボタン */
 #main .page .sns-share, #main .page .sns-follow {
   display: none;
+}
+
+/* #endregion */
+/* #region 関連記事 */
+#related-entries a:hover, #pager-post-navi a:hover {
+  transition: all 0.3s ease;
+  background-color: #D1C4E9;
 }
 
 /* #endregion */

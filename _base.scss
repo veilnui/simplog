@@ -107,7 +107,7 @@ body {
   @include size(56px, 56px);
   background-color: #40C4FF;
   border-radius: 50%;
-  .fa-arrow-up{
+  .fa {
     color: $background-color;
     &:hover {
       transform: rotate(360deg);
@@ -263,6 +263,14 @@ body {
 #main .page {
   .sns-share, .sns-follow {
     display: none;
+  }
+}
+/* #endregion */
+/* #region 関連記事 */
+#related-entries, #pager-post-navi {
+  a:hover {
+    transition: all 0.3s ease;
+    background-color: $base-color;
   }
 }
 /* #endregion */
