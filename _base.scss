@@ -134,6 +134,10 @@ body {
       border-bottom: solid 79px transparent;
     }
   }
+  a:hover {
+    transition: all 0.3s ease;
+    background-color: $base-color;
+  }
 }
 #sidebar {
   @extend #sidebar-menu-content;
@@ -263,28 +267,26 @@ body {
 }
 /* #endregion */
 /* #region コメント */
-#comment-form {
-  #comment {
-    border: 1px solid $main-color-dark;
+#comment-reply-btn {
+  color: $font-color;
+  background-color: $main-color-dark;
+  border-radius: 4px;
+  border: none;
+}
+#commentform {
+  #comment, #author, #email, #url{
+    border: none;
+    border-bottom: 2px solid $main-color-dark;
     border-radius: 0;
-    transition: all 0.3s ease;
     &:focus {
       background-color: $base-color;
-    }
-    #author, #email, #url {
-      border-width: 0 0 2px 0;
-      border-radius: 0;
-      border-bottom: 2px solid $main-color-dark;
-      &:focus {
-        background-color: $base-color;
-        transition: all 0.3s ease;
-      }
+      transition: all 0.3s ease;
     }
   }
   #submit {
+    color: $font-color;
     background-color: $main-color-dark;
-    border-radius: 5px;
-    color: $base-color;
+    border-radius: 4px;
     border: none;
   }
 }

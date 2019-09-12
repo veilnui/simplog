@@ -127,6 +127,11 @@ body {
   border-bottom: solid 79px transparent;
 }
 
+#sidebar-menu-content a:hover, #sidebar a:hover {
+  transition: all 0.3s ease;
+  background-color: #C8E6C9;
+}
+
 #sidebar {
   animation: fadeIn 1s ease-out 0s 1 normal;
 }
@@ -262,31 +267,28 @@ body {
 
 /* #endregion */
 /* #region コメント */
-#comment-form #comment {
-  border: 1px solid #00C853;
-  border-radius: 0;
-  transition: all 0.3s ease;
-}
-
-#comment-form #comment:focus {
-  background-color: #C8E6C9;
-}
-
-#comment-form #comment #author, #comment-form #comment #email, #comment-form #comment #url {
-  border-width: 0 0 2px 0;
-  border-radius: 0;
-  border-bottom: 2px solid #00C853;
-}
-
-#comment-form #comment #author:focus, #comment-form #comment #email:focus, #comment-form #comment #url:focus {
-  background-color: #C8E6C9;
-  transition: all 0.3s ease;
-}
-
-#comment-form #submit {
+#comment-reply-btn {
+  color: white;
   background-color: #00C853;
-  border-radius: 5px;
-  color: #C8E6C9;
+  border-radius: 4px;
+  border: none;
+}
+
+#commentform #comment, #commentform #author, #commentform #email, #commentform #url {
+  border: none;
+  border-bottom: 2px solid #00C853;
+  border-radius: 0;
+}
+
+#commentform #comment:focus, #commentform #author:focus, #commentform #email:focus, #commentform #url:focus {
+  background-color: #C8E6C9;
+  transition: all 0.3s ease;
+}
+
+#commentform #submit {
+  color: white;
+  background-color: #00C853;
+  border-radius: 4px;
   border: none;
 }
 
