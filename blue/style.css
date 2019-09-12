@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-  Skin Name: weblog skin by veilnui
+  Skin Name: weblog skin by veilnui (blue)
   Description: veilnuiが作成したシンプルなブログスキン（青色）
   Skin URI: https://github.com/veilnui/weblog-skin-by-veilnui/
   Author: veilnui
@@ -262,28 +262,28 @@ body {
 
 /* #endregion */
 /* #region コメント */
-#commentform #comment {
+#comment-form #comment {
   border: 1px solid #2196F3;
   border-radius: 0;
   transition: all 0.3s ease;
 }
 
-#commentform #comment:focus {
+#comment-form #comment:focus {
   background-color: #E3F2FD;
 }
 
-#commentform #comment #author, #commentform #comment #email, #commentform #comment #url {
+#comment-form #comment #author, #comment-form #comment #email, #comment-form #comment #url {
   border-width: 0 0 2px 0;
   border-radius: 0;
   border-bottom: 2px solid #2196F3;
 }
 
-#commentform #comment #author:focus, #commentform #comment #email:focus, #commentform #comment #url:focus {
+#comment-form #comment #author:focus, #comment-form #comment #email:focus, #comment-form #comment #url:focus {
   background-color: #E3F2FD;
   transition: all 0.3s ease;
 }
 
-#commentform #submit {
+#comment-form #submit {
   background-color: #2196F3;
   border-radius: 5px;
   color: #E3F2FD;
