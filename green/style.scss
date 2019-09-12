@@ -18,13 +18,13 @@ $font-color: white;
 // 背景色（デフォルトは白色）
 $background-color: white;
 // ベースカラー（60%）
-$base-color: #E3F2FD;
+$base-color: #C8E6C9;
 // キーカラー（10%）
-$key-color: #3e64ff;
+$key-color: #388E3C;
 // メインカラー（30%）
-$main-color-dark: #2196F3;
-$main-color-medium: #5edfff;// 未使用
-$main-color-light: #b2fcff;// 未使用
+$main-color-dark: #00C853;
+$main-color-medium: #00E676;// 未使用
+$main-color-light: #69F0AE;// 未使用
 
 // タグをインポート
 @import "..\\_tag.scss";
