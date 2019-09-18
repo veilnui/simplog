@@ -1,0 +1,9 @@
+﻿/*!
+  Skin Name: weblog skin by veilnui (pink)
+  Description: veilnuiが作成したシンプルなブログスキン（桃色）
+  Skin URI: https://github.com/veilnui/weblog-skin-by-veilnui/
+  Author: veilnui
+  Author URI: https://veilnui.net/
+  Version: 1.0
+  License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
+*/body{background-color:#F8BBD0}#content-in{display:flex;flex-flow:column nowrap}#main{width:100%;background-color:#F8BBD0;margin:0}#container{display:flex;flex-direction:column;min-height:100vh}#content{margin-bottom:20px}#header{background-color:#FF4081}#header .tagline,#header .site-name-text{color:#fff}#footer{color:#fff;background-color:black;margin-top:auto}#card-container{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:stretch;width:100%}#card-container .card{text-align:center;width:calc(96% / 3);border-radius:4px;background-color:white;padding:1em}#card-container .card:hover{transform:translateY(-2px);transition:all 0.3s ease}#card-container .card a{background-color:#E91E63;padding:0.5em;border-radius:4px;color:white}

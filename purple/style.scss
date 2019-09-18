@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /*!
-  Skin Name: weblog skin by veilnui (purple)
-  Description: veilnuiが作成したシンプルなブログスキン（紫　色）
+  Skin Name: weblog skin by veilnui (blue)
+  Description: veilnuiが作成したシンプルなブログスキン（青色）
   Skin URI: https://github.com/veilnui/weblog-skin-by-veilnui/
   Author: veilnui
   Author URI: https://veilnui.net/
@@ -26,7 +26,5 @@ $main-color-dark: #651FFF;
 $main-color-medium: #673AB7;// 未使用
 $main-color-light: #9575CD;// 未使用
 
-// タグをインポート
-@import "..\\_tag.scss";
 // プロパティをインポート
 @import "..\\_base.scss";

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
-  Skin Name: weblog skin by veilnui (blue)
-  Description: veilnuiが作成したシンプルなブログスキン（青色）
+  Skin Name: weblog skin by veilnui (pink)
+  Description: veilnuiが作成したシンプルなブログスキン（桃色）
   Skin URI: https://github.com/veilnui/weblog-skin-by-veilnui/
   Author: veilnui
   Author URI: https://veilnui.net/
@@ -20,7 +20,7 @@
 */
 /* 背景色 */
 body {
-  background-color: #D1C4E9;
+  background-color: #F8BBD0;
 }
 
 /* メインとサイドバーを縦並べ */
@@ -31,7 +31,7 @@ body {
 
 #main {
   width: 100%;
-  background-color: #D1C4E9;
+  background-color: #F8BBD0;
   margin: 0;
 }
 
@@ -47,7 +47,7 @@ body {
 
 /* ヘッダー */
 #header {
-  background-color: #5E35B1;
+  background-color: #FF4081;
 }
 
 #header .tagline, #header .site-name-text {
@@ -85,7 +85,7 @@ body {
 }
 
 #card-container .card a {
-  background-color: #651FFF;
+  background-color: #E91E63;
   padding: 0.5em;
   border-radius: 4px;
   color: white;

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /*!
-  Skin Name: weblog skin by veilnui (blue)
-  Description: veilnuiが作成したシンプルなブログスキン（青色）
+  Skin Name: weblog skin by veilnui (indigo)
+  Description: veilnuiが作成したシンプルなブログスキン（群青色）
   Skin URI: https://github.com/veilnui/weblog-skin-by-veilnui/
   Author: veilnui
   Author URI: https://veilnui.net/
@@ -18,13 +18,13 @@ $font-color: white;
 // 背景色（デフォルトは白色）
 $background-color: white;
 // ベースカラー（60%）
-$base-color: #C8E6C9;
+$base-color: #9FA8DA;
 // キーカラー（10%）
-$key-color: #388E3C;
+$key-color: #303F9F;
 // メインカラー（30%）
-$main-color-dark: #00C853;
-$main-color-medium: #00E676;// 未使用
-$main-color-light: #69F0AE;// 未使用
+$main-color-dark: #3D5AFE;
+$main-color-medium: #536DFE;// 未使用
+$main-color-light: #8C9EFF;// 未使用
 
 // プロパティをインポート
 @import "..\\_base.scss";
