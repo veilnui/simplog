@@ -1,6 +1,7 @@
 # weblog-skin-by-veilnui
 WordPressの無料テーマ「Cocoon」の非公式スキン。
-オープンソースで開発中です。
+オープンソースで開発中です。  
+まだベータ版です。
 
 # license
 GNU General Public License v2 or any later
