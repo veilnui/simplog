@@ -22,7 +22,7 @@
 
 /* 背景色 */
 body {
-  background-color: #B2EBF2;
+  background-color: #E0F7FA;
 }
 
 /* #region フッターの浮き上がり防止。 */
@@ -43,7 +43,7 @@ body {
 /* #endregion */
 /* #region ヘッダー */
 #header {
-  background-color: #00E5FF;
+  background-color: #26C6DA;
 }
 
 #header .tagline, #header .site-name-text {
@@ -53,11 +53,11 @@ body {
 /* #endregion */
 /* #region ナビゲーションバー */
 #navi {
-  background-color: #84FFFF;
+  background-color: #00E5FF;
 }
 
 #navi a:hover {
-  background-color: #84FFFF;
+  background-color: #00E5FF;
 }
 
 #navi .item-label {
@@ -106,7 +106,7 @@ body {
 /* #endregion */
 /* #region サイドバー */
 #sidebar-menu-content h3, #sidebar h3 {
-  background-color: #00E5FF;
+  background-color: #26C6DA;
   color: white;
   padding: 5px 5px 5px 42px;
   line-height: 2.5;
@@ -129,7 +129,7 @@ body {
 
 #sidebar-menu-content a:hover, #sidebar a:hover {
   transition: all 0.3s ease;
-  background-color: #B2EBF2;
+  background-color: #E0F7FA;
 }
 
 #sidebar {
@@ -141,11 +141,11 @@ body {
 #sidebar .search-edit, #search-menu-content .search-edit, #slide-in-sidebar .search-edit {
   border-width: 0 0 2px 0;
   border-radius: 0;
-  border-bottom: 2px solid #84FFFF;
+  border-bottom: 2px solid #00E5FF;
 }
 
 #sidebar .search-edit:focus, #search-menu-content .search-edit:focus, #slide-in-sidebar .search-edit:focus {
-  background-color: #B2EBF2;
+  background-color: #E0F7FA;
   transition: all 0.3s ease;
 }
 
@@ -154,7 +154,7 @@ body {
 }
 
 #sidebar .search-submit:hover, #search-menu-content .search-submit:hover, #slide-in-sidebar .search-submit:hover {
-  color: #84FFFF;
+  color: #00E5FF;
 }
 
 /* #endregion */
@@ -187,13 +187,13 @@ body {
 /* #region メニュー */
 #toc {
   color: white;
-  border: 1px solid #84FFFF;
+  border: 1px solid #00E5FF;
   padding: 0px;
 }
 
 #toc .toc-title {
   padding: 0em;
-  background-color: #84FFFF;
+  background-color: #00E5FF;
 }
 
 #toc .toc-list {
@@ -204,13 +204,13 @@ body {
 /* #endregion */
 /* #region 見出し */
 #main .article h1 {
-  background: linear-gradient(to right, #00E5FF, #84FFFF);
+  background: linear-gradient(to right, #26C6DA, #00E5FF);
   color: white;
   padding: 1em;
 }
 
 #main .article h2, #main .article h3, #main .article h4 {
-  background: linear-gradient(to right, #00E5FF, #84FFFF);
+  background: linear-gradient(to right, #26C6DA, #00E5FF);
   position: relative;
   color: transparent;
   background-clip: text;
@@ -222,7 +222,7 @@ body {
 }
 
 #main .article h2::after {
-  background: linear-gradient(to right, #00E5FF, #84FFFF);
+  background: linear-gradient(to right, #26C6DA, #00E5FF);
   position: absolute;
   content: "";
   top: auto;
@@ -238,7 +238,7 @@ body {
 }
 
 #main .article h3::after {
-  background: linear-gradient(to right, #00E5FF, #84FFFF);
+  background: linear-gradient(to right, #26C6DA, #00E5FF);
   position: absolute;
   content: "";
   top: auto;
@@ -253,6 +253,20 @@ body {
   padding: 0.5px;
 }
 
+/* #region テーブル */
+#main .wp-block-table tr:nth-child(odd) {
+  background-color: #E0F7FA;
+}
+
+#main .wp-block-table tr:nth-child(even) {
+  background-color: white;
+}
+
+#main .wp-block-table tr td {
+  border: none;
+}
+
+/* #endregion */
 /* #region タグ */
 #main .tag-link {
   color: white;
@@ -269,32 +283,32 @@ body {
 /* #region 関連記事 */
 #related-entries a:hover, #pager-post-navi a:hover {
   transition: all 0.3s ease;
-  background-color: #B2EBF2;
+  background-color: #E0F7FA;
 }
 
 /* #endregion */
 /* #region コメント */
 #comment-reply-btn {
   color: white;
-  background-color: #84FFFF;
+  background-color: #00E5FF;
   border-radius: 4px;
   border: none;
 }
 
 #commentform #comment, #commentform #author, #commentform #email, #commentform #url {
   border: none;
-  border-bottom: 2px solid #84FFFF;
+  border-bottom: 2px solid #00E5FF;
   border-radius: 0;
 }
 
 #commentform #comment:focus, #commentform #author:focus, #commentform #email:focus, #commentform #url:focus {
-  background-color: #B2EBF2;
+  background-color: #E0F7FA;
   transition: all 0.3s ease;
 }
 
 #commentform #submit {
   color: white;
-  background-color: #84FFFF;
+  background-color: #00E5FF;
   border-radius: 4px;
   border: none;
 }

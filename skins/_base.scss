@@ -236,6 +236,21 @@ body {
     }
   }
 }
+/* #region テーブル */
+#main .wp-block-table {
+  tr {
+    &:nth-child(odd) {
+      background-color: $base-color;
+    }
+    &:nth-child(even) {
+      background-color: $background-color;
+    }
+    td {
+      border: none;
+    }
+  }
+}
+/* #endregion */
 /* #region タグ */
 // eachでタグを出力
 #main .tag-link{

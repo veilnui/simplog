@@ -253,6 +253,20 @@ body {
   padding: 0.5px;
 }
 
+/* #region テーブル */
+#main .wp-block-table tr:nth-child(odd) {
+  background-color: #DCEDC8;
+}
+
+#main .wp-block-table tr:nth-child(even) {
+  background-color: white;
+}
+
+#main .wp-block-table tr td {
+  border: none;
+}
+
+/* #endregion */
 /* #region タグ */
 #main .tag-link {
   color: white;

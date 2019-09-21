@@ -22,9 +22,9 @@ $base-color: #9FA8DA;
 // キーカラー（10%）
 $key-color: #303F9F;
 // メインカラー（30%）
-$main-color-dark: #3D5AFE;
-$main-color-medium: #536DFE;// 未使用
-$main-color-light: #8C9EFF;// 未使用
+$main-color: #3D5AFE;
 
+// タグをインポート
+@import "..\\_tag.scss";
 // プロパティをインポート
 @import "..\\_base.scss";

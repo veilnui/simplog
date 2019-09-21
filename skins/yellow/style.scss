@@ -14,15 +14,15 @@
 // フィールド
 //----------
 // 文字色（デフォルトは白色）
-$font-color: white;
+$font-color: black;
 // 背景色（デフォルトは白色）
 $background-color: white;
 // ベースカラー（60%）
-$base-color: #FFF59D;
+$base-color: #FFF9C4;
 // キーカラー（10%）
-$key-color: #FFEA00;
+$key-color: #FFD600;
 // メインカラー（30%）
-$main-color: #FFEE58;
+$main-color: #FFEB3B;
 
 // タグをインポート
 @import "..\\_tag.scss";
