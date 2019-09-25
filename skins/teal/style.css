@@ -8,7 +8,7 @@
   Version: 1.0
   License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
 */
-/* フェードイン表示をするアニメーション */
+/* fade in animation */
 @keyframes fadeIn {
   0% {
     transform: translateY(10%);
@@ -20,12 +20,12 @@
   }
 }
 
-/* 背景色 */
+/* background color */
 body {
   background-color: #80CBC4;
 }
 
-/* #region フッターの浮き上がり防止。 */
+/* #region footer float prevent */
 #container {
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ body {
 }
 
 /* #endregion */
-/* #region ヘッダー */
+/* #region Header */
 #header {
   background-color: #009688;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 /* #endregion */
-/* #region ナビゲーションバー */
+/* #region Navigation bar */
 #navi {
   background-color: #00BFA5;
 }
@@ -86,7 +86,7 @@ body {
 }
 
 /* #endregion */
-/* #region トップへ戻る */
+/* #region Go to top */
 #go-to-top .go-to-top-button {
   width: 56px;
   height: 56px;
@@ -104,7 +104,7 @@ body {
 }
 
 /* #endregion */
-/* #region サイドバー */
+/* #region Side bar */
 #sidebar-menu-content h3, #sidebar h3 {
   background-color: #009688;
   color: white;
@@ -137,7 +137,7 @@ body {
 }
 
 /* #endregion */
-/* #region 検索ボックス */
+/* #region Search box */
 #sidebar .search-edit, #search-menu-content .search-edit, #slide-in-sidebar .search-edit {
   border-width: 0 0 2px 0;
   border-radius: 0;
@@ -149,16 +149,18 @@ body {
   transition: all 0.3s ease;
 }
 
-#sidebar .search-submit, #search-menu-content .search-submit, #slide-in-sidebar .search-submit {
+#sidebar .search-edit:focus ~ .search-submit, #search-menu-content .search-edit:focus ~ .search-submit, #slide-in-sidebar .search-edit:focus ~ .search-submit {
   transition: all 0.3s ease;
+  color: #00BFA5;
 }
 
 #sidebar .search-submit:hover, #search-menu-content .search-submit:hover, #slide-in-sidebar .search-submit:hover {
+  transition: all 0.3s ease;
   color: #00BFA5;
 }
 
 /* #endregion */
-/* #endregion ブログカード */
+/* #endregion Blog card */
 #main {
   animation: fadeIn 1s ease-out 0s 1 normal;
 }
@@ -184,7 +186,7 @@ body {
 }
 
 /* #endregion */
-/* #region メニュー */
+/* #region Toc */
 #toc {
   color: white;
   border: 1px solid #00BFA5;
@@ -202,7 +204,7 @@ body {
 }
 
 /* #endregion */
-/* #region 見出し */
+/* #region Article */
 #main .article h1 {
   background: linear-gradient(to right, #009688, #00BFA5);
   color: white;
@@ -253,7 +255,8 @@ body {
   padding: 0.5px;
 }
 
-/* #region テーブル */
+/* #endregion */
+/* #region Table */
 #main .wp-block-table tr:nth-child(odd) {
   background-color: #80CBC4;
 }
@@ -267,27 +270,27 @@ body {
 }
 
 /* #endregion */
-/* #region タグ */
+/* #region Tag */
 #main .tag-link {
   color: white;
   border: none;
 }
 
 /* #endregion */
-/* #region SNSボタン */
+/* #region SNS */
 #main .page .sns-share, #main .page .sns-follow {
   display: none;
 }
 
 /* #endregion */
-/* #region 関連記事 */
+/* #region Relation posts */
 #related-entries a:hover, #pager-post-navi a:hover {
   transition: all 0.3s ease;
   background-color: #80CBC4;
 }
 
 /* #endregion */
-/* #region コメント */
+/* #region Comments */
 #comment-reply-btn {
   color: white;
   background-color: #00BFA5;
@@ -314,10 +317,22 @@ body {
 }
 
 /* #endregion */
-/* #region フッター */
+/* #region Footer */
 #footer {
   color: white;
   background-color: black;
+}
+
+body .mobile-footer-memu-buttons {
+  background-color: #009688;
+}
+
+body .mobile-footer-memu-buttons li {
+  color: #80CBC4;
+}
+
+body .mobile-footer-memu-buttons li:hover {
+  background-color: #00BFA5;
 }
 
 /* #endregion */
