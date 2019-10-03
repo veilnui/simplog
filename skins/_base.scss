@@ -121,16 +121,25 @@ body {
   @include size(56px, 56px);
   background-color: #40C4FF;
   border-radius: 50%;
+  &:hover .fa {
+    transform: rotate(360deg);
+    transition: 0.2s;
+  }
   .fa {
     color: $background-color;
-    &:hover {
-      transform: rotate(360deg);
-      transition: 0.2s;
-    }
   }
 }
 /* #endregion */
-
+/* #region Breadcrumb */
+#breadcrumb {
+  .fa, a {
+    color: $main-color;
+  }
+  .sp .fa {
+    color: $key-color;
+  }
+}
+/* #endregion */
 /* #region Side bar */
 #sidebar-menu-content {
   h3 {
@@ -178,6 +187,14 @@ body {
   .search-submit:hover {
     transition: all 0.3s ease;
     color: $main-color;
+  }
+}
+/* #endregion */
+
+/* #region Search box */
+#sidebar, #search-menu-content, #slide-in-sidebar {
+  .toc-widget-box a:hover {
+    background-color: $background-color;
   }
 }
 /* #endregion */
@@ -347,12 +364,14 @@ body {
   color: $font-color;
   background-color: black;
 }
-body .mobile-footer-memu-buttons {
+body .mobile-footer-menu-buttons {
   background-color: $key-color;
-  li {
-    color: $base-color;
+  .menu-button {
     &:hover {
-      background-color: $main-color;
+      background-color: $key-color;
+    }
+    .menu-button-in {
+      color: $base-color;
     }
   }
 }

@@ -1,11 +1,26 @@
-//-----
-// タグ
-//-----
-// 要素が１つのときに設定するプロパティ。
+//------
+// Tags
+//------
+// If one element, this property setting.
 $tag-default: 'background-color';
-// タグ
-// 要素が１つのとき
-// タグ名: 色
-// 要素が複数のとき
-// タグ名: (プロパティ: 色, プロパティ: 色 ...)
-$tag: ();
+// Tags
+// 
+// If one element.
+// Tag name: setting value
+// If one element, can not setting value on property different from $tag-default.
+// 
+// If two over elements.
+// Tag name: (property: setting value, property: setting value ...)
+$tag: (
+  // Sample
+  //
+  // If one element.
+  // Sample1: black,
+  // Sample2: white,
+  // Sample3: red,
+  //
+  // If two over elements.
+  // Sample4: (background-color: blue, color: green),
+  // Sample5: (background-color: yellow, border-color: none),
+  // Sample6: (color: pink, border-color: orange),
+);

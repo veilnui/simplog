@@ -94,13 +94,23 @@ body {
   border-radius: 50%;
 }
 
+#go-to-top .go-to-top-button:hover .fa {
+  transform: rotate(360deg);
+  transition: 0.2s;
+}
+
 #go-to-top .go-to-top-button .fa {
   color: white;
 }
 
-#go-to-top .go-to-top-button .fa:hover {
-  transform: rotate(360deg);
-  transition: 0.2s;
+/* #endregion */
+/* #region Breadcrumb */
+#breadcrumb .fa, #breadcrumb a {
+  color: #5E35B1;
+}
+
+#breadcrumb .sp .fa {
+  color: #651FFF;
 }
 
 /* #endregion */
@@ -157,6 +167,12 @@ body {
 #sidebar .search-submit:hover, #search-menu-content .search-submit:hover, #slide-in-sidebar .search-submit:hover {
   transition: all 0.3s ease;
   color: #5E35B1;
+}
+
+/* #endregion */
+/* #region Search box */
+#sidebar .toc-widget-box a:hover, #search-menu-content .toc-widget-box a:hover, #slide-in-sidebar .toc-widget-box a:hover {
+  background-color: white;
 }
 
 /* #endregion */
@@ -323,16 +339,16 @@ body {
   background-color: black;
 }
 
-body .mobile-footer-memu-buttons {
+body .mobile-footer-menu-buttons {
   background-color: #651FFF;
 }
 
-body .mobile-footer-memu-buttons li {
-  color: #B39DDB;
+body .mobile-footer-menu-buttons .menu-button:hover {
+  background-color: #651FFF;
 }
 
-body .mobile-footer-memu-buttons li:hover {
-  background-color: #5E35B1;
+body .mobile-footer-menu-buttons .menu-button .menu-button-in {
+  color: #B39DDB;
 }
 
 /* #endregion */

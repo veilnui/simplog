@@ -10,4 +10,4 @@ https://www.gnu.org/licenses/gpl-2.0.en.html
 https://www.gnu.org/licenses/gpl-3.0.en.html  
 https://www.gnu.org/licenses/agpl-3.0.en.html
 
-https://github.com/veilnui/simplog/archive/master.zip
+

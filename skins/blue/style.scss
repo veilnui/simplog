@@ -10,23 +10,21 @@
   License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
 */
 
-//----------
-// フィールド
-//----------
-// 文字色（デフォルトは白色）
+//-------
+// Fields
+//-------
+// Font color
 $font-color: white;
-// 背景色（デフォルトは白色）
+// Background color
 $background-color: white;
-// ベースカラー（60%）
+// Base color (60%)
 $base-color: #E3F2FD;
-// キーカラー（10%）
+// Key color（10%）
 $key-color: #3e64ff;
-// メインカラー（30%）
+// Main color（30%）
 $main-color: #2196F3;
-$main-color-medium: #5edfff;// 未使用
-$main-color-light: #b2fcff;// 未使用
 
-// タグをインポート
+// Tag import
 @import "..\\_tag.scss";
-// プロパティをインポート
+// Base file import
 @import "..\\_base.scss";
