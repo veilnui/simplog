@@ -223,12 +223,14 @@ body {
 /* #region Article */
 #main .article h1 {
   background: linear-gradient(to right, #0091EA, #29B6F6);
+  background: -webkit-linear-gradient(to right, #0091EA, #29B6F6);
   color: white;
   padding: 1em;
 }
 
 #main .article h2, #main .article h3, #main .article h4 {
   background: linear-gradient(to right, #0091EA, #29B6F6);
+  background: -webkit-linear-gradient(to right, #0091EA, #29B6F6);
   position: relative;
   color: transparent;
   background-clip: text;
@@ -241,6 +243,7 @@ body {
 
 #main .article h2::after {
   background: linear-gradient(to right, #0091EA, #29B6F6);
+  background: -webkit-linear-gradient(to right, #0091EA, #29B6F6);
   position: absolute;
   content: "";
   top: auto;
@@ -257,6 +260,7 @@ body {
 
 #main .article h3::after {
   background: linear-gradient(to right, #0091EA, #29B6F6);
+  background: -webkit-linear-gradient(to right, #0091EA, #29B6F6);
   position: absolute;
   content: "";
   top: auto;

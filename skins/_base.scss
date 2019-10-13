@@ -42,6 +42,7 @@
 // $end: end color($main-color)
 @mixin linear-gradient($dir: right, $start: $key-color, $end: $main-color) {
   background: linear-gradient(to $dir, $start, $end);
+  background: -webkit-linear-gradient(to $dir, $start, $end);
 }
 
 //----------
