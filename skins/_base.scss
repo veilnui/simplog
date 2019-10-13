@@ -99,7 +99,7 @@ body {
   }
   .item-label {
     position: relative;
-    color: $font-color;
+    color: black;
     &::after {
       @include pseudo();
       @include position(auto, 0, 0, auto);

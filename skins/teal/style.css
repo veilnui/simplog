@@ -62,7 +62,7 @@ body {
 
 #navi .item-label {
   position: relative;
-  color: white;
+  color: black;
 }
 
 #navi .item-label::after {
