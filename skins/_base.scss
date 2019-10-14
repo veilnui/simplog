@@ -284,6 +284,7 @@ body {
 
 /* #region Table */
 #main .wp-block-table {
+  overflow-x: scroll;
   tr {
     &:nth-child(odd) {
       background-color: $base-color;
@@ -299,7 +300,7 @@ body {
 /* #endregion */
 
 /* #region Tag */
-// Tag make
+// Tag generator
 #main .tag-link{
   color: $font-color;
   border: none;
