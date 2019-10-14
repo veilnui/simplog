@@ -194,8 +194,13 @@ body {
 
 /* #region Search box */
 #sidebar, #search-menu-content, #slide-in-sidebar {
-  .toc-widget-box a:hover {
-    background-color: $background-color;
+
+  .toc-widget-box a {
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $background-color;
+      text-decoration: none;
+    }
   }
 }
 /* #endregion */
@@ -224,7 +229,7 @@ body {
 /* #region Toc */
 #toc {
   a {
-    transition: color 0.3s;
+    transition: all 0.3s ease;
     &:hover {
       text-decoration: none;
     }
