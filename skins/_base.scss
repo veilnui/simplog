@@ -226,11 +226,13 @@ body {
   animation: fadeIn 1s ease-out 0s 1 normal;
   // Hover to float
   .entry-card-wrap {
+    position: relative;
+    z-index: 2;
     background-color: $background-color;
     border-radius: 4px;
     margin-bottom: 1em;
     &:hover {
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 2);
+      box-shadow: 0 10px 20px -5px black;
       transform: translateY(-2px);
       transition: all 0.3s ease;
     }

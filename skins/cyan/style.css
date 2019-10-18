@@ -201,13 +201,15 @@ body {
 }
 
 #main .entry-card-wrap {
+  position: relative;
+  z-index: 2;
   background-color: white;
   border-radius: 4px;
   margin-bottom: 1em;
 }
 
 #main .entry-card-wrap:hover {
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 20px -5px black;
   transform: translateY(-2px);
   transition: all 0.3s ease;
 }
