@@ -1,4 +1,4 @@
-# simplog
+# Simplog
 WordPressの無料テーマ「Cocoon」の非公式スキン。
 オープンソースで開発中です。  
 まだベータ版です。
