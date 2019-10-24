@@ -4,7 +4,7 @@
  */
 global $_THEME_OPTIONS;
 $_THEME_OPTIONS = [
-  // All
+  // all
   'site_key_color' => '',
   'site_key_text_color' => '',
   'site_text_color' => '',
@@ -22,4 +22,13 @@ $_THEME_OPTIONS = [
   'global_navi_text_color' => '',
   // body
   'responsive_table_enable' => 0,
+  // column
+  'main_column_border_color' => '',
+  'sidebar_border_color' => '',
+  // footer
+  'footer_background_color' => '',
+  'footer_text_color' => '',
+  // go to top
+  'go_to_top_background_color' => '',
+  'go_to_top_text_color' => '',
 ];
