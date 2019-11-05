@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 /*!
-  Skin Name: Simplog (cyan)
+  Skin Name: veilnui SIMPLOG (cyan)
   Description: veilnuiが作成したシンプルなブログスキン（シアン）
-  Skin URI: https://github.com/veilnui/simplog/archive/master.zip
+  Skin URI: https://simplog.veilnui.org
   Author: veilnui
   Author URI: https://veilnui.net/
   Version: 1.0
@@ -14,15 +14,17 @@
 // Fields
 //-------
 // Font color
-$font-color: white;
+$font-color: #333333;
 // Background color
-$background-color: white;
+$white-color: white;
 // Base color（60%）
 $base-color: #E0F7FA;
 // Key color（10%）
-$key-color: #26C6DA;
+$key-color: #00838F;
 // Main color（30%）
-$main-color: #00E5FF;
+$main-color-light: #80DEEA;
+$main-color-midium: #26C6DA;
+$main-color-dark: #00ACC1;
 
 // Tag import
 @import "..\\_tag.scss";

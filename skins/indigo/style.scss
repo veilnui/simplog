@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 /*!
-  Skin Name: Simplog (indigo)
+  Skin Name: veilnui SIMPLOG (indigo)
   Description: veilnuiが作成したシンプルなブログスキン（群青色）
-  Skin URI: https://github.com/veilnui/simplog/archive/master.zip
+  Skin URI: veilnui SIMPLOG
   Author: veilnui
   Author URI: https://veilnui.net/
   Version: 1.0
@@ -14,15 +14,17 @@
 // Fields
 //-------
 // Font color
-$font-color: white;
+$font-color: #333333;
 // Background color
-$background-color: white;
-// Base color（60%）
-$base-color: #9FA8DA;
+$white-color: white;
+// Base color (60%)
+$base-color: #E8EAF6;
 // Key color（10%）
-$key-color: #303F9F;
+$key-color: #283593;
 // Main color（30%）
-$main-color: #3D5AFE;
+$main-color-light: #9FA8DA;
+$main-color-midium: #5C6BC0;
+$main-color-dark: #3949AB;
 
 // Tag import
 @import "..\\_tag.scss";

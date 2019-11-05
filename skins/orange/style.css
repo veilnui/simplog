@@ -86,20 +86,6 @@ body {
 }
 
 /* #endregion */
-/* #region Appeal Area */
-#appeal .appeal-in {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: block;
-}
-
-#appeal .appeal-in .appeal-content {
-  width: 100%;
-  border-radius: 0;
-}
-
-/* #endregion */
 /* #region Go to top */
 #go-to-top .go-to-top-button {
   width: 56px;

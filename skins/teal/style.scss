@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 /*!
-  Skin Name: Simplog (teal)
+  Skin Name: veilnui SIMPLOG (teal)
   Description: veilnuiが作成したシンプルなブログスキン（鴨の羽色）
-  Skin URI: https://github.com/veilnui/simplog/archive/master.zip
+  Skin URI: https://simplog.veilnui.org
   Author: veilnui
   Author URI: https://veilnui.net/
   Version: 1.0
@@ -14,15 +14,17 @@
 // Fields
 //-------
 // Font color
-$font-color: white;
+$font-color: #333333;
 // Background color
-$background-color: white;
-// Base color（60%）
-$base-color: #80CBC4;
+$white-color: white;
+// Base color (60%)
+$base-color: #E0F2F1;
 // Key color（10%）
-$key-color: #009688;
+$key-color: #00695C;
 // Main color（30%）
-$main-color: #00BFA5;
+$main-color-light: #80CBC4;
+$main-color-midium: #26A69A;
+$main-color-dark: #00897B;
 
 // Tag import
 @import "..\\_tag.scss";
