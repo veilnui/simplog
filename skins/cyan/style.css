@@ -48,7 +48,7 @@ body {
 }
 
 #header .tagline, #header .site-name-text {
-  color: #80DEEA;
+  color: white;
 }
 
 /* #endregion */
@@ -85,6 +85,11 @@ body {
   transform: scale(1, 1);
 }
 
+#navi .sub-menu {
+  background-color: #26C6DA;
+  color: white;
+}
+
 /* #endregion */
 /* #region Go to top */
 #go-to-top .go-to-top-button {
@@ -117,7 +122,7 @@ body {
 /* #region Sidebar */
 #sidebar-menu-content h3, #sidebar h3 {
   background-color: #26C6DA;
-  color: #80DEEA;
+  color: white;
   padding: 5px 5px 5px 42px;
   line-height: 2.5;
   position: relative;
@@ -139,7 +144,7 @@ body {
 
 #sidebar-menu-content a:hover, #sidebar a:hover {
   transition: all 0.3s ease;
-  background-color: #26C6DA;
+  background-color: #80DEEA;
 }
 
 #sidebar {

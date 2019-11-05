@@ -86,7 +86,7 @@ body {
 #header {
   background-color: $main-color-dark;
   .tagline, .site-name-text {
-    color: $main-color-light;
+    color: $white-color;
   }
 }
 /* #endregion */
@@ -99,7 +99,7 @@ body {
   }
   .item-label {
     position: relative;
-    color: white;
+    color: $white-color;
     &::after {
       @include pseudo();
       @include position(auto, 0, 0, auto);
@@ -112,6 +112,10 @@ body {
     &:hover::after {
       transform: scale(1, 1);
     }
+  }
+  .sub-menu {
+    background-color: $main-color-midium;
+    color: $white-color;
   }
 }
 /* #endregion */
@@ -146,7 +150,7 @@ body {
 #sidebar-menu-content {
   h3 {
     background-color: $main-color-midium;
-    color: $main-color-light;
+    color: $white-color;
     padding: 5px 5px 5px 42px;
     line-height: 2.5;
     position: relative;
@@ -162,7 +166,7 @@ body {
   }
   a:hover {
     transition: all 0.3s ease;
-    background-color: $main-color-midium;
+    background-color: $main-color-light;
   }
 }
 #sidebar {
