@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
-  Skin Name: Simplog (teal)
+  Skin Name: veilnui SIMPLOG (teal)
   Description: veilnuiが作成したシンプルなブログスキン（鴨の羽色）
-  Skin URI: https://github.com/veilnui/simplog/archive/master.zip
+  Skin URI: https://simplog.veilnui.org
   Author: veilnui
   Author URI: https://veilnui.net/
   Version: 1.0
@@ -22,7 +22,7 @@
 
 /* #region background color */
 body {
-  background-color: #80CBC4;
+  background-color: #E0F2F1;
 }
 
 /* #endregion */
@@ -44,21 +44,21 @@ body {
 /* #endregion */
 /* #region Header */
 #header {
-  background-color: #009688;
+  background-color: #00897B;
 }
 
 #header .tagline, #header .site-name-text {
-  color: white;
+  color: #80CBC4;
 }
 
 /* #endregion */
 /* #region Navigation bar */
 #navi {
-  background-color: #00BFA5;
+  background-color: #26A69A;
 }
 
 #navi a:hover {
-  background-color: #00BFA5;
+  background-color: #26A69A;
 }
 
 #navi .item-label {
@@ -75,7 +75,7 @@ body {
   right: auto;
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: #80CBC4;
   transform: scale(0, 1);
   transform-origin: center top;
   transition: transform 0.3s;
@@ -90,7 +90,7 @@ body {
 #go-to-top .go-to-top-button {
   width: 56px;
   height: 56px;
-  background-color: #40C4FF;
+  background-color: #00695C;
   border-radius: 50%;
 }
 
@@ -100,24 +100,24 @@ body {
 }
 
 #go-to-top .go-to-top-button .fa {
-  color: white;
+  color: #80CBC4;
 }
 
 /* #endregion */
 /* #region Breadcrumb */
 #breadcrumb .fa, #breadcrumb a {
-  color: #00BFA5;
+  color: #26A69A;
 }
 
 #breadcrumb .sp .fa {
-  color: #009688;
+  color: #26A69A;
 }
 
 /* #endregion */
 /* #region Sidebar */
 #sidebar-menu-content h3, #sidebar h3 {
-  background-color: #009688;
-  color: white;
+  background-color: #26A69A;
+  color: #80CBC4;
   padding: 5px 5px 5px 42px;
   line-height: 2.5;
   position: relative;
@@ -139,7 +139,7 @@ body {
 
 #sidebar-menu-content a:hover, #sidebar a:hover {
   transition: all 0.3s ease;
-  background-color: #80CBC4;
+  background-color: #26A69A;
 }
 
 #sidebar {
@@ -155,7 +155,7 @@ body {
 #sidebar .search-edit, #search-menu-content .search-edit, #slide-in-sidebar .search-edit {
   border-width: 0 0 2px 0;
   border-radius: 0;
-  border-bottom: 2px solid #00BFA5;
+  border-bottom: 2px solid #26A69A;
 }
 
 #sidebar .search-edit:focus, #search-menu-content .search-edit:focus, #slide-in-sidebar .search-edit:focus {
@@ -165,12 +165,12 @@ body {
 
 #sidebar .search-edit:focus ~ .search-submit, #search-menu-content .search-edit:focus ~ .search-submit, #slide-in-sidebar .search-edit:focus ~ .search-submit {
   transition: all 0.3s ease;
-  color: #00BFA5;
+  color: #26A69A;
 }
 
 #sidebar .search-submit:hover, #search-menu-content .search-submit:hover, #slide-in-sidebar .search-submit:hover {
   transition: all 0.3s ease;
-  color: #00BFA5;
+  color: #26A69A;
 }
 
 /* #endregion */
@@ -215,8 +215,8 @@ body {
 /* #endregion */
 /* #region Previous and Next */
 #main .pagination-previous-link, #main .pagination-next-link {
-  color: #80CBC4;
-  background-color: #00BFA5;
+  color: #E0F2F1;
+  background-color: #26A69A;
   border: none;
   border-radius: 4px;
 }
@@ -224,20 +224,20 @@ body {
 #main .pagination span {
   border: none;
   border-radius: 4px;
-  background-color: #009688;
+  background-color: #00897B;
 }
 
 #main .pagination a {
   border: none;
   border-radius: 4px;
-  background-color: #00BFA5;
+  background-color: #00897B;
 }
 
 /* #endregion */
 /* #region Toc */
 #toc {
-  color: white;
-  border: 1px solid #00BFA5;
+  color: #333333;
+  border: 1px solid #26A69A;
   padding: 0px;
 }
 
@@ -264,7 +264,7 @@ body {
 
 #toc .toc-title {
   padding: 0em;
-  background-color: #00BFA5;
+  background-color: #26A69A;
 }
 
 #toc .toc-list {
@@ -274,13 +274,13 @@ body {
 /* #endregion */
 /* #region Article */
 #main .article h1 {
-  background: linear-gradient(to right, #009688, #00BFA5);
+  background: linear-gradient(to right, #00897B, #26A69A);
   color: white;
   padding: 1em;
 }
 
 #main .article h2, #main .article h3, #main .article h4 {
-  background: linear-gradient(to right, #009688, #00BFA5);
+  background: linear-gradient(to right, #00897B, #26A69A);
   position: relative;
   color: transparent;
   -webkit-background-clip: text;
@@ -294,7 +294,7 @@ body {
 }
 
 #main .article h2::after {
-  background: linear-gradient(to right, #009688, #00BFA5);
+  background: linear-gradient(to right, #00897B, #26A69A);
   position: absolute;
   content: "";
   top: auto;
@@ -310,7 +310,7 @@ body {
 }
 
 #main .article h3::after {
-  background: linear-gradient(to right, #009688, #00BFA5);
+  background: linear-gradient(to right, #00897B, #26A69A);
   position: absolute;
   content: "";
   top: auto;
@@ -346,7 +346,7 @@ body {
 /* #endregion */
 /* #region Tag */
 #main .tag-link {
-  color: white;
+  color: #333333;
   border: none;
 }
 
@@ -371,15 +371,15 @@ body {
 /* #endregion */
 /* #region Comments */
 #comment-reply-btn {
-  color: white;
-  background-color: #00BFA5;
+  color: #333333;
+  background-color: #26A69A;
   border-radius: 4px;
   border: none;
 }
 
 #commentform #comment, #commentform #author, #commentform #email, #commentform #url {
   border: none;
-  border-bottom: 2px solid #00BFA5;
+  border-bottom: 2px solid #26A69A;
   border-radius: 0;
 }
 
@@ -389,8 +389,8 @@ body {
 }
 
 #commentform #submit {
-  color: white;
-  background-color: #00BFA5;
+  color: #333333;
+  background-color: #26A69A;
   border-radius: 4px;
   border: none;
 }
@@ -398,16 +398,16 @@ body {
 /* #endregion */
 /* #region Footer */
 #footer {
-  color: white;
+  color: #333333;
   background-color: black;
 }
 
 body .mobile-footer-menu-buttons {
-  background-color: #009688;
+  background-color: #00897B;
 }
 
 body .mobile-footer-menu-buttons .menu-button:hover {
-  background-color: #009688;
+  background-color: #00897B;
 }
 
 body .mobile-footer-menu-buttons .menu-button .menu-button-in {

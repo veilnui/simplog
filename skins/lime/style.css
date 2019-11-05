@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
-  Skin Name: Simplog (lime)
+  Skin Name: veilnui SIMPLOG (lime)
   Description: veilnuiが作成したシンプルなブログスキン（ライム）
-  Skin URI: https://github.com/veilnui/simplog/archive/master.zip
+  Skin URI: https://simplog.veilnui.org
   Author: veilnui
   Author URI: https://veilnui.net/
   Version: 1.0
@@ -22,7 +22,7 @@
 
 /* #region background color */
 body {
-  background-color: #F0F4C3;
+  background-color: #F9FBE7;
 }
 
 /* #endregion */
@@ -44,21 +44,21 @@ body {
 /* #endregion */
 /* #region Header */
 #header {
-  background-color: #AEEA00;
+  background-color: #C0CA33;
 }
 
 #header .tagline, #header .site-name-text {
-  color: white;
+  color: #E6EE9C;
 }
 
 /* #endregion */
 /* #region Navigation bar */
 #navi {
-  background-color: #a8ff3e;
+  background-color: #D4E157;
 }
 
 #navi a:hover {
-  background-color: #a8ff3e;
+  background-color: #D4E157;
 }
 
 #navi .item-label {
@@ -75,7 +75,7 @@ body {
   right: auto;
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: #E6EE9C;
   transform: scale(0, 1);
   transform-origin: center top;
   transition: transform 0.3s;
@@ -90,7 +90,7 @@ body {
 #go-to-top .go-to-top-button {
   width: 56px;
   height: 56px;
-  background-color: #40C4FF;
+  background-color: #9E9D24;
   border-radius: 50%;
 }
 
@@ -100,24 +100,24 @@ body {
 }
 
 #go-to-top .go-to-top-button .fa {
-  color: white;
+  color: #E6EE9C;
 }
 
 /* #endregion */
 /* #region Breadcrumb */
 #breadcrumb .fa, #breadcrumb a {
-  color: #a8ff3e;
+  color: #D4E157;
 }
 
 #breadcrumb .sp .fa {
-  color: #AEEA00;
+  color: #D4E157;
 }
 
 /* #endregion */
 /* #region Sidebar */
 #sidebar-menu-content h3, #sidebar h3 {
-  background-color: #AEEA00;
-  color: white;
+  background-color: #D4E157;
+  color: #E6EE9C;
   padding: 5px 5px 5px 42px;
   line-height: 2.5;
   position: relative;
@@ -139,7 +139,7 @@ body {
 
 #sidebar-menu-content a:hover, #sidebar a:hover {
   transition: all 0.3s ease;
-  background-color: #F0F4C3;
+  background-color: #D4E157;
 }
 
 #sidebar {
@@ -155,22 +155,22 @@ body {
 #sidebar .search-edit, #search-menu-content .search-edit, #slide-in-sidebar .search-edit {
   border-width: 0 0 2px 0;
   border-radius: 0;
-  border-bottom: 2px solid #a8ff3e;
+  border-bottom: 2px solid #D4E157;
 }
 
 #sidebar .search-edit:focus, #search-menu-content .search-edit:focus, #slide-in-sidebar .search-edit:focus {
-  background-color: #F0F4C3;
+  background-color: #E6EE9C;
   transition: all 0.3s ease;
 }
 
 #sidebar .search-edit:focus ~ .search-submit, #search-menu-content .search-edit:focus ~ .search-submit, #slide-in-sidebar .search-edit:focus ~ .search-submit {
   transition: all 0.3s ease;
-  color: #a8ff3e;
+  color: #D4E157;
 }
 
 #sidebar .search-submit:hover, #search-menu-content .search-submit:hover, #slide-in-sidebar .search-submit:hover {
   transition: all 0.3s ease;
-  color: #a8ff3e;
+  color: #D4E157;
 }
 
 /* #endregion */
@@ -215,8 +215,8 @@ body {
 /* #endregion */
 /* #region Previous and Next */
 #main .pagination-previous-link, #main .pagination-next-link {
-  color: #F0F4C3;
-  background-color: #a8ff3e;
+  color: #F9FBE7;
+  background-color: #D4E157;
   border: none;
   border-radius: 4px;
 }
@@ -224,20 +224,20 @@ body {
 #main .pagination span {
   border: none;
   border-radius: 4px;
-  background-color: #AEEA00;
+  background-color: #C0CA33;
 }
 
 #main .pagination a {
   border: none;
   border-radius: 4px;
-  background-color: #a8ff3e;
+  background-color: #C0CA33;
 }
 
 /* #endregion */
 /* #region Toc */
 #toc {
-  color: white;
-  border: 1px solid #a8ff3e;
+  color: #333333;
+  border: 1px solid #D4E157;
   padding: 0px;
 }
 
@@ -264,7 +264,7 @@ body {
 
 #toc .toc-title {
   padding: 0em;
-  background-color: #a8ff3e;
+  background-color: #D4E157;
 }
 
 #toc .toc-list {
@@ -274,13 +274,13 @@ body {
 /* #endregion */
 /* #region Article */
 #main .article h1 {
-  background: linear-gradient(to right, #AEEA00, #a8ff3e);
+  background: linear-gradient(to right, #C0CA33, #D4E157);
   color: white;
   padding: 1em;
 }
 
 #main .article h2, #main .article h3, #main .article h4 {
-  background: linear-gradient(to right, #AEEA00, #a8ff3e);
+  background: linear-gradient(to right, #C0CA33, #D4E157);
   position: relative;
   color: transparent;
   -webkit-background-clip: text;
@@ -294,7 +294,7 @@ body {
 }
 
 #main .article h2::after {
-  background: linear-gradient(to right, #AEEA00, #a8ff3e);
+  background: linear-gradient(to right, #C0CA33, #D4E157);
   position: absolute;
   content: "";
   top: auto;
@@ -310,7 +310,7 @@ body {
 }
 
 #main .article h3::after {
-  background: linear-gradient(to right, #AEEA00, #a8ff3e);
+  background: linear-gradient(to right, #C0CA33, #D4E157);
   position: absolute;
   content: "";
   top: auto;
@@ -332,7 +332,7 @@ body {
 }
 
 #main .wp-block-table tr:nth-child(odd) {
-  background-color: #F0F4C3;
+  background-color: #E6EE9C;
 }
 
 #main .wp-block-table tr:nth-child(even) {
@@ -346,7 +346,7 @@ body {
 /* #endregion */
 /* #region Tag */
 #main .tag-link {
-  color: white;
+  color: #333333;
   border: none;
 }
 
@@ -365,32 +365,32 @@ body {
 /* #region Relation posts */
 #related-entries a:hover, #pager-post-navi a:hover {
   transition: all 0.3s ease;
-  background-color: #F0F4C3;
+  background-color: #E6EE9C;
 }
 
 /* #endregion */
 /* #region Comments */
 #comment-reply-btn {
-  color: white;
-  background-color: #a8ff3e;
+  color: #333333;
+  background-color: #D4E157;
   border-radius: 4px;
   border: none;
 }
 
 #commentform #comment, #commentform #author, #commentform #email, #commentform #url {
   border: none;
-  border-bottom: 2px solid #a8ff3e;
+  border-bottom: 2px solid #D4E157;
   border-radius: 0;
 }
 
 #commentform #comment:focus, #commentform #author:focus, #commentform #email:focus, #commentform #url:focus {
-  background-color: #F0F4C3;
+  background-color: #E6EE9C;
   transition: all 0.3s ease;
 }
 
 #commentform #submit {
-  color: white;
-  background-color: #a8ff3e;
+  color: #333333;
+  background-color: #D4E157;
   border-radius: 4px;
   border: none;
 }
@@ -398,20 +398,20 @@ body {
 /* #endregion */
 /* #region Footer */
 #footer {
-  color: white;
+  color: #333333;
   background-color: black;
 }
 
 body .mobile-footer-menu-buttons {
-  background-color: #AEEA00;
+  background-color: #C0CA33;
 }
 
 body .mobile-footer-menu-buttons .menu-button:hover {
-  background-color: #AEEA00;
+  background-color: #C0CA33;
 }
 
 body .mobile-footer-menu-buttons .menu-button .menu-button-in {
-  color: #F0F4C3;
+  color: #E6EE9C;
 }
 
 /* #endregion */

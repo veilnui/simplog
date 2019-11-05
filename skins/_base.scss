@@ -40,7 +40,7 @@
 // $dir: direct(right)
 // $start: start color($key-color)
 // $end: end color($main-color)
-@mixin linear-gradient($dir: right, $start: $key-color, $end: $main-color) {
+@mixin linear-gradient($dir: right, $start: $main-color-dark, $end: $main-color-midium) {
   background: linear-gradient(to $dir, $start, $end);
 }
 
@@ -84,18 +84,18 @@ body {
 
 /* #region Header */
 #header {
-  background-color: $key-color;
+  background-color: $main-color-dark;
   .tagline, .site-name-text {
-    color: $font-color;
+    color: $main-color-light;
   }
 }
 /* #endregion */
 
 /* #region Navigation bar */
 #navi {
-  background-color: $main-color;
+  background-color: $main-color-midium;
   a:hover {
-    background-color: $main-color;
+    background-color: $main-color-midium;
   }
   .item-label {
     position: relative;
@@ -104,7 +104,7 @@ body {
       @include pseudo();
       @include position(auto, 0, 0, auto);
       @include size(100%, 2px);
-      background-color: $font-color;
+      background-color: $main-color-light;
       transform: scale(0, 1);
       transform-origin: center top;
       transition: transform 0.3s;
@@ -119,14 +119,14 @@ body {
 /* #region Go to top */
 #go-to-top .go-to-top-button {
   @include size(56px, 56px);
-  background-color: #40C4FF;
+  background-color: $key-color;
   border-radius: 50%;
   &:hover .fa {
     transform: rotate(360deg);
     transition: 0.2s;
   }
   .fa {
-    color: $background-color;
+    color: $main-color-light;
   }
 }
 /* #endregion */
@@ -134,10 +134,10 @@ body {
 /* #region Breadcrumb */
 #breadcrumb {
   .fa, a {
-    color: $main-color;
+    color: $main-color-midium;
   }
   .sp .fa {
-    color: $key-color;
+    color: $main-color-midium;
   }
 }
 /* #endregion */
@@ -145,8 +145,8 @@ body {
 /* #region Sidebar */
 #sidebar-menu-content {
   h3 {
-    background-color: $key-color;
-    color: $font-color;
+    background-color: $main-color-midium;
+    color: $main-color-light;
     padding: 5px 5px 5px 42px;
     line-height: 2.5;
     position: relative;
@@ -162,7 +162,7 @@ body {
   }
   a:hover {
     transition: all 0.3s ease;
-    background-color: $base-color;
+    background-color: $main-color-midium;
   }
 }
 #sidebar {
@@ -179,19 +179,19 @@ body {
   .search-edit {
     border-width: 0 0 2px 0;
     border-radius: 0;
-    border-bottom: 2px solid $main-color;
+    border-bottom: 2px solid $main-color-midium;
     &:focus {
-      background-color: $base-color;
+      background-color: $main-color-light;
       transition: all 0.3s ease;
       ~ .search-submit {
         transition: all 0.3s ease;
-        color: $main-color;
+        color: $main-color-midium;
       }
     }
   }
   .search-submit:hover {
     transition: all 0.3s ease;
-    color: $main-color;
+    color: $main-color-midium;
   }
 }
 /* #endregion */
@@ -201,7 +201,7 @@ body {
   .toc-widget-box a {
     transition: all 0.3s ease;
     &:hover {
-      background-color: $background-color;
+      background-color: $white-color;
       text-decoration: none;
     }
   }
@@ -215,7 +215,7 @@ body {
   .entry-card-wrap {
     position: relative;
     z-index: 2;
-    background-color: $background-color;
+    background-color: $white-color;
     border-radius: 4px;
     margin-bottom: 1em;
     &:hover {
@@ -235,7 +235,7 @@ body {
 #main {
   .pagination-previous-link, .pagination-next-link {
     color: $base-color;
-    background-color: $main-color;
+    background-color: $main-color-midium;
     border: none;
     border-radius: 4px;
   }
@@ -243,12 +243,12 @@ body {
     span {
       border: none;
       border-radius: 4px;
-      background-color: $key-color;
+      background-color: $main-color-dark;
     }
     a {
       border: none;
       border-radius: 4px;
-      background-color: $main-color;
+      background-color: $main-color-dark;
     }
   }
 }
@@ -272,11 +272,11 @@ body {
     }
   }
   color: $font-color;
-  border: 1px solid $main-color;
+  border: 1px solid $main-color-midium;
   padding: 0px;
   .toc-title {
     padding: 0em;
-    background-color: $main-color;
+    background-color: $main-color-midium;
   }
   .toc-list {
     padding: 0 20px 0 20px;
@@ -289,7 +289,7 @@ body {
   .article {
     h1 {
       @include linear-gradient();
-      color: $font-color;
+      color: $white-color;
       padding: 1em;
     }
     h2, h3, h4 {
@@ -331,10 +331,10 @@ body {
   overflow-x: scroll;
   tr {
     &:nth-child(odd) {
-      background-color: $base-color;
+      background-color: $main-color-light;
     }
     &:nth-child(even) {
-      background-color: $background-color;
+      background-color: $white-color;
     }
     td {
       border: none;
@@ -383,7 +383,7 @@ body {
 #related-entries, #pager-post-navi {
   a:hover {
     transition: all 0.3s ease;
-    background-color: $base-color;
+    background-color: $main-color-light;
   }
 }
 /* #endregion */
@@ -391,23 +391,23 @@ body {
 /* #region Comments */
 #comment-reply-btn {
   color: $font-color;
-  background-color: $main-color;
+  background-color: $main-color-midium;
   border-radius: 4px;
   border: none;
 }
 #commentform {
   #comment, #author, #email, #url{
     border: none;
-    border-bottom: 2px solid $main-color;
+    border-bottom: 2px solid $main-color-midium;
     border-radius: 0;
     &:focus {
-      background-color: $base-color;
+      background-color: $main-color-light;
       transition: all 0.3s ease;
     }
   }
   #submit {
     color: $font-color;
-    background-color: $main-color;
+    background-color: $main-color-midium;
     border-radius: 4px;
     border: none;
   }
@@ -420,13 +420,13 @@ body {
   background-color: black;
 }
 body .mobile-footer-menu-buttons {
-  background-color: $key-color;
+  background-color: $main-color-dark;
   .menu-button {
     &:hover {
-      background-color: $key-color;
+      background-color: $main-color-dark;
     }
     .menu-button-in {
-      color: $base-color;
+      color: $main-color-light;
     }
   }
 }
