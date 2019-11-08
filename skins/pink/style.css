@@ -144,7 +144,7 @@ body {
 
 #sidebar-menu-content a:hover, #sidebar a:hover {
   transition: all 0.3s ease;
-  background-color: #F48FB1;
+  background-color: #FCE4EC;
 }
 
 #sidebar {
@@ -160,11 +160,13 @@ body {
 #sidebar .search-edit, #search-menu-content .search-edit, #slide-in-sidebar .search-edit {
   border-width: 0 0 2px 0;
   border-radius: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   border-bottom: 2px solid #EC407A;
 }
 
 #sidebar .search-edit:focus, #search-menu-content .search-edit:focus, #slide-in-sidebar .search-edit:focus {
-  background-color: #F48FB1;
+  background-color: #FCE4EC;
   transition: all 0.3s ease;
 }
 
@@ -241,7 +243,7 @@ body {
 /* #endregion */
 /* #region Toc */
 #toc {
-  color: #333333;
+  color: white;
   border: 1px solid #EC407A;
   padding: 0px;
 }

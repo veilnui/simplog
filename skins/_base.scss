@@ -166,7 +166,7 @@ body {
   }
   a:hover {
     transition: all 0.3s ease;
-    background-color: $main-color-light;
+    background-color: $base-color;
   }
 }
 #sidebar {
@@ -183,9 +183,11 @@ body {
   .search-edit {
     border-width: 0 0 2px 0;
     border-radius: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     border-bottom: 2px solid $main-color-midium;
     &:focus {
-      background-color: $main-color-light;
+      background-color: $base-color;
       transition: all 0.3s ease;
       ~ .search-submit {
         transition: all 0.3s ease;
@@ -275,7 +277,7 @@ body {
       text-decoration: none;
     }
   }
-  color: $font-color;
+  color: $white-color;
   border: 1px solid $main-color-midium;
   padding: 0px;
   .toc-title {
