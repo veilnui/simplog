@@ -334,10 +334,6 @@ body {
 
 /* #endregion */
 /* #region Table */
-#main .wp-block-table {
-  overflow-x: scroll;
-}
-
 #main .wp-block-table tr:nth-child(odd) {
   background-color: #CE93D8;
 }
