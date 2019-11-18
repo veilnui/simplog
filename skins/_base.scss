@@ -334,6 +334,7 @@ body {
 
 /* #region Table */
 #main .wp-block-table {
+  overflow-x: scroll;
   tr {
     &:nth-child(odd) {
       background-color: $main-color-light;
