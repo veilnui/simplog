@@ -20,8 +20,6 @@ $_THEME_OPTIONS = [
   'header_text_color' => '',
   'global_navi_background_color' => '',
   'global_navi_text_color' => '',
-  // body
-  'responsive_table_enable' => 0,
   // column
   'main_column_border_color' => '',
   'sidebar_border_color' => '',
