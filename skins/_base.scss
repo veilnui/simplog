@@ -1,12 +1,21 @@
-//------
+//-------------
 // Mixin
-//------
+// ミックスイン
+//-------------
 // Prosessing common implement of pseudo elements.
 // Recommended use both this and "position mixin".
 // 
 // Setting value(default value)
-// $pos: position property()
+// $pos: position property(absolute)
 // $con: string(empty string)
+//
+// 
+// 擬似要素でよく使用するミックスイン
+// positionミックスインとの併用をおすすめします
+// 
+// 設定値（デフォルト値）
+// $pos: positionプロパティ（absolute）
+// $con: 文字列（空文字）
 @mixin pseudo($pos: absolute, $con: "") {
   position: $pos;
   content: $con;
@@ -19,6 +28,16 @@
 // $lef: left(auto)
 // $bot: bottom(auto)
 // $rig: right(auto)
+// 
+// 
+// 位置設定のミックスイン
+// pseudoミックスインとの併用をおすすめします
+// 
+// 設定値（デフォルト値）
+// $top: 上（auto）
+// $lef: 左（auto）
+// $bot: 下（auto）
+// $rig: 右（auto）
 @mixin position($top: auto, $lef: auto, $bot: auto, $rig: auto) {
   top: $top;
   left: $lef;
@@ -30,6 +49,13 @@
 // Setting value
 // $wid: width
 // $hei: height
+// 
+// 
+// 要素のサイズ設定
+//
+// 設定値
+// $wid: 横幅
+// $hei: 縦幅
 @mixin size($wid, $hei) {
   width: $wid;
   height: $hei;
@@ -40,14 +66,26 @@
 // $dir: direct(right)
 // $start: start color($key-color)
 // $end: end color($main-color)
+// 
+// 
+// グラデーション作成
+// 
+// 設定値（デフォルト値）
+// $dir: 方向（右）
+// $start: 開始の色（$main-color-dark）
+// $end: 終わりの色（$main-color-midium）
 @mixin linear-gradient($dir: right, $start: $main-color-dark, $end: $main-color-midium) {
   background: linear-gradient(to $dir, $start, $end);
 }
 
-//----------
+//--------------
 // Animation
-//----------
-/* fade in animation */
+// アニメーション
+//--------------
+/*
+ * fade in animation
+ * フェードインアニメーション
+ */
 @keyframes fadeIn {
   0% {
     transform: translateY(10%);
@@ -61,14 +99,21 @@
 
 //---------
 // Selector
+// セレクタ
 //---------
-/* #region background color */
+/* #region
+ * background color
+ * 背景色
+ */
 body {
   background-color: $base-color;
 }
 /* #endregion */
 
-/* #region footer float prevent */
+/* #region
+ * footer float prevent
+ * フッター浮き上がり防止
+ */
 #container {
   display: flex;
   flex-direction: column;
@@ -82,7 +127,10 @@ body {
 }
 /* #endregion */
 
-/* #region Header */
+/* #region
+ * Header
+ * ヘッダー
+ */
 #header {
   background-color: $main-color-dark;
   .tagline, .site-name-text {
@@ -91,7 +139,10 @@ body {
 }
 /* #endregion */
 
-/* #region Navigation bar */
+/* #region
+ * Navigation bar
+ * ナビゲーションメニュー
+ */
 #navi {
   background-color: $main-color-midium;
   a:hover {
@@ -120,7 +171,10 @@ body {
 }
 /* #endregion */
 
-/* #region Go to top */
+/* #region
+ * Go to top button
+ * Go to topボタン
+ */
 #go-to-top .go-to-top-button {
   @include size(56px, 56px);
   background-color: $key-color;
@@ -135,7 +189,10 @@ body {
 }
 /* #endregion */
 
-/* #region Breadcrumb */
+/* #region
+ * Breadcrumb
+ * パンくずリスト
+ */
 #breadcrumb {
   .fa, a {
     color: $main-color-midium;
@@ -146,7 +203,10 @@ body {
 }
 /* #endregion */
 
-/* #region Sidebar */
+/* #region
+ * Sidebar
+ * サイドバー
+ */
 #sidebar-menu-content {
   h3 {
     background-color: $main-color-midium;
@@ -178,7 +238,10 @@ body {
 }
 /* #endregion */
 
-/* #region Search box */
+/* #region
+ * Search box
+ * 検索ボックス
+ */
 #sidebar, #search-menu-content, #slide-in-sidebar {
   .search-edit {
     border-width: 0 0 2px 0;
@@ -202,7 +265,10 @@ body {
 }
 /* #endregion */
 
-/* #region Sidebar toc */
+/* #region
+ * Sidebar toc
+ * サイドバー目次
+ */
 #sidebar, #search-menu-content, #slide-in-sidebar {
   .toc-widget-box a {
     transition: all 0.3s ease;
@@ -214,10 +280,14 @@ body {
 }
 /* #endregion */
 
-/* #endregion Blog card */
+/* #region
+ * Blog card
+ * ブログカード
+ */
 #main {
   animation: fadeIn 1s ease-out 0s 1 normal;
   // Hover to float
+  // ホバーで浮き上がる
   .entry-card-wrap {
     position: relative;
     z-index: 2;
@@ -237,7 +307,10 @@ body {
 }
 /* #endregion */
 
-/* #region Previous and Next */
+/* #region
+ * Previous and Next
+ * 前、次へボタン
+ */
 #main {
   .pagination-previous-link, .pagination-next-link {
     color: $base-color;
@@ -259,7 +332,10 @@ body {
   }
 }
 /* #endregion */
-/* #region Toc */
+/* #region
+ * Toc
+ * 目次
+ */
 #toc {
   .toc-content {
     padding: 0;
@@ -290,7 +366,10 @@ body {
 }
 /* #endregion */
 
-/* #region Article */
+/* #region
+ * Article
+ * 見出し
+ */
 #main {
   .article {
     h1 {
@@ -332,9 +411,11 @@ body {
 }
 /* #endregion */
 
-/* #region Table */
+/* #region
+ * Table
+ * テーブル
+ */
 #main .wp-block-table {
-  overflow-x: scroll;
   tr {
     &:nth-child(odd) {
       background-color: $main-color-light;
@@ -349,22 +430,30 @@ body {
 }
 /* #endregion */
 
-/* #region Tag */
+/* #region
+ * Tag
+ * タグ
+ */
 // Tag generator
+// タグ生成器
 #main .tag-link {
   color: $font-color;
   border: none;
   // Get key
+  // キー取得
   @each $base-key, $base-value in $tag {
     // Store key
+    // キーを設定
     &[href*= "#{$base-key}"] {
       // Is value multiple elements?
+      // 複数のプロパティを持つ場合
       @if length($base-value) != 1 {
         @each $key, $value in $base-value {
           #{$key}: $value;
         }
       }
       // Value is not multiple element.
+      // 複数のプロパティを持たない場合
       @else {
         #{$tag-default}: $base-value;
       }
@@ -377,7 +466,10 @@ body {
 }
 /* #endregion */
 
-/* #region SNS */
+/* #region
+ * SNS
+ * SNSボタン
+ */
 #main .page {
   .sns-share, .sns-follow {
     display: none;
@@ -385,7 +477,10 @@ body {
 }
 /* #endregion */
 
-/* #region Relation posts */
+/* #region
+ * Relation posts
+ * 関連記事
+ */
 #related-entries, #pager-post-navi {
   a:hover {
     transition: all 0.3s ease;
@@ -394,7 +489,10 @@ body {
 }
 /* #endregion */
 
-/* #region Comments */
+/* #region
+ * Comments
+ * コメント
+ */
 #comment-reply-btn {
   color: $font-color;
   background-color: $main-color-midium;
@@ -420,7 +518,10 @@ body {
 }
 /* #endregion */
 
-/* #region Footer */
+/* #region
+ * Footer
+ * フッター
+ */
 #footer {
   color: $white-color;
   background-color: black;
