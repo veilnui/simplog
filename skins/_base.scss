@@ -101,19 +101,12 @@
 // Selector
 // セレクタ
 //---------
-/* #region
- * background color
- * 背景色
- */
+/* background color 背景色 */
 body {
   background-color: $base-color;
 }
-/* #endregion */
 
-/* #region
- * footer float prevent
- * フッター浮き上がり防止
- */
+/* footer float prevent フッター浮き上がり防止 */
 #container {
   display: flex;
   flex-direction: column;
@@ -125,7 +118,6 @@ body {
 #footer {
   margin-top: auto;
 }
-/* #endregion */
 
 /* #region
  * Header
@@ -239,6 +231,19 @@ body {
 /* #endregion */
 
 /* #region
+ * Sidebar widget
+ * サイドバーウェジット
+ */
+#sidebar, #slide-in-sidebar {
+  /* CTA Box
+   * CTAボックス
+   */
+  .cta-box {
+    background-color: $white-color;
+  }
+}
+/* #endregion */
+/* #region
  * Search box
  * 検索ボックス
  */
@@ -332,84 +337,82 @@ body {
   }
 }
 /* #endregion */
-/* #region
- * Toc
- * 目次
- */
-#toc {
+
+/* Toc 目次 */
+#toc, .toc {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  border-color: $main-color-midium;
+  border-radius: 4px;
+  .toc-title {
+    padding: 0;
+    background-color: $main-color-midium;
+    color: $white-color;
+    &::after {
+      color: $white-color;
+      transition: all 0.3s ease;
+      &:hover {
+        text-decoration-color: $white-color;
+      }
+    }
+  }
   .toc-content {
     padding: 0;
     .toc-list {
-      margin-top: 0;
-      margin-bottom: 0;
+      margin: 0;
+      li {
+        margin: 0;
+        a {
+          transition: all 0.3s ease;
+          &:hover {
+            color: $main-color-light;
+          }
+        }
+      }
     }
-    li:nth-of-type(1) {
-      margin-top: 0;
-    }
-  }
-  a {
-    transition: all 0.3s ease;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  color: $white-color;
-  border: 1px solid $main-color-midium;
-  padding: 0px;
-  .toc-title {
-    padding: 0em;
-    background-color: $main-color-midium;
-  }
-  .toc-list {
-    padding: 0 20px 0 20px;
   }
 }
-/* #endregion */
 
-/* #region
- * Article
- * 見出し
- */
+/* Heading 見出し */
 #main {
-  .article {
-    h1 {
+  h1 {
+    @include linear-gradient();
+    color: $white-color;
+    padding: 1em;
+  }
+  h2, h3, h4, h5, h6 {
+    @include linear-gradient();
+    position: relative;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    border: 0;
+    &::after {
       @include linear-gradient();
-      color: $white-color;
-      padding: 1em;
+      @include pseudo();
+      @include position(auto, 0px, 0px, auto);
     }
-    h2, h3, h4 {
-      @include linear-gradient();
-      position: relative;
-      color: transparent;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      -ms-background-clip: text;
-      border: 0;
-    }
-    h2 {
-      padding: 0.5em;
-      &::after {
-        @include linear-gradient();
-        @include pseudo();
-        @include position(auto, 0px, 0px, auto);
-        @include size(100%, 3px);
-      }
-    }
-    h3 {
-      padding: 0.25em;
-      &::after {
-        @include linear-gradient();
-        @include pseudo();
-        @include position(auto, 0px, 0px, auto);
-        @include size(100%, 1px);
-      }
-    }
-    h4 {
-      padding: 0.5px;
+  }
+  h2, h3 {
+    padding: 0.5em;
+  }
+  h2::after {
+    @include size(100%, 5px);
+  }
+  h3::after {
+    @include size(100%, 3px);
+  }
+  h4, h5, h6 {
+    padding: 0.25em;
+    &::after {
+      @include size(100%, 1px);
     }
   }
 }
-/* #endregion */
+
+
 
 /* #region
  * Table
