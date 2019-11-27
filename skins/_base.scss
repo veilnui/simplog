@@ -230,16 +230,33 @@ body {
 }
 /* #endregion */
 
-/* #region
- * Sidebar widget
- * サイドバーウェジット
- */
+/* Sidebar widget サイドバーウェジット */
 #sidebar, #slide-in-sidebar {
-  /* CTA Box
-   * CTAボックス
-   */
+  /* CTA Box CTAボックス */
   .cta-box {
     background-color: $white-color;
+  }
+  /* Profile プロファイル */
+  .author-box {
+    border-color: $main-color-midium;
+  }
+  /* Calendar カレンダー */
+  #wp-calendar {
+    caption {
+      border-color: $key-color;;
+      background-color: $main-color-dark;
+    }
+    thead tr th {
+      border-color: $key-color;
+      background-color: $main-color-midium;
+    }
+    tbody tr td {
+      border-color: $key-color;
+      background-color: $main-color-light;
+      &#today {
+        background-color: $main-color-midium;
+      }
+    }
   }
 }
 /* #endregion */
@@ -351,10 +368,7 @@ body {
     color: $white-color;
     &::after {
       color: $white-color;
-      transition: all 0.3s ease;
-      &:hover {
-        text-decoration-color: $white-color;
-      }
+      transition: text-decoration 0.3s;
     }
   }
   .toc-content {
@@ -492,12 +506,9 @@ body {
 }
 /* #endregion */
 
-/* #region
- * Comments
- * コメント
- */
+/* Comments コメント */
 #comment-reply-btn {
-  color: $font-color;
+  color: $white-color;
   background-color: $main-color-midium;
   border-radius: 4px;
   border: none;
@@ -513,13 +524,12 @@ body {
     }
   }
   #submit {
-    color: $font-color;
+    color: $white-color;
     background-color: $main-color-midium;
     border-radius: 4px;
     border: none;
   }
 }
-/* #endregion */
 
 /* #region
  * Footer
