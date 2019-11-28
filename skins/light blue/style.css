@@ -160,6 +160,7 @@ body {
 #sidebar, #slide-in-sidebar {
   /* CTA Box CTAボックス */
   /* Profile プロファイル */
+  /* Archives アーカイブ */
   /* Calendar カレンダー */
   /* Search box 検索ボックス */
 }
@@ -179,6 +180,11 @@ body {
 
 #sidebar .author-box, #slide-in-sidebar .author-box {
   border-color: #29B6F6;
+}
+
+#sidebar .widget_archive select, #slide-in-sidebar .widget_archive select {
+  border: solid #29B6F6 1px;
+  background-color: #81D4FA;
 }
 
 #sidebar #wp-calendar caption, #slide-in-sidebar #wp-calendar caption {
@@ -246,6 +252,20 @@ body {
 }
 
 /* #endregion */
+/* related post 関連記事 */
+#related-entries {
+  /* displya border settings ボーダー表示設定あり */
+}
+
+#related-entries a {
+  border-radius: 4px;
+}
+
+#related-entries.recb-entry-border a {
+  border: solid #29B6F6 1px;
+  border-radius: 4px;
+}
+
 /* pager post navi ページ送りナビ */
 #pager-post-navi {
   /* displya border settings ボーダー表示設定あり */
@@ -299,6 +319,11 @@ body {
 /* internal and outside blog card 内部、外部ブログカード */
 #main .article .blogcard {
   border: solid #29B6F6 1px;
+  transition: all 0.3s ease;
+}
+
+#main .article .blogcard:hover {
+  background-color: #81D4FA;
 }
 
 /* #region
