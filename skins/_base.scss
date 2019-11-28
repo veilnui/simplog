@@ -119,22 +119,15 @@ body {
   margin-top: auto;
 }
 
-/* #region
- * Header
- * ヘッダー
- */
+/* Header ヘッダー */
 #header {
   background-color: $main-color-dark;
   .tagline, .site-name-text {
     color: $white-color;
   }
 }
-/* #endregion */
 
-/* #region
- * Navigation bar
- * ナビゲーションメニュー
- */
+/* Navigation bar ナビゲーションメニュー */
 #navi {
   background-color: $main-color-midium;
   a:hover {
@@ -147,7 +140,7 @@ body {
       @include pseudo();
       @include position(auto, 0, 0, auto);
       @include size(100%, 2px);
-      background-color: $main-color-light;
+      background-color: $white-color;
       transform: scale(0, 1);
       transform-origin: center top;
       transition: transform 0.3s;
@@ -161,7 +154,6 @@ body {
     color: $white-color;
   }
 }
-/* #endregion */
 
 /* #region
  * Go to top button
@@ -234,7 +226,7 @@ body {
 #sidebar, #slide-in-sidebar {
   /* CTA Box CTAボックス */
   .cta-box {
-    background-color: $white-color;
+    border: solid $main-color-midium 1px;
   }
   /* Profile プロファイル */
   .author-box {
@@ -303,12 +295,21 @@ body {
 }
 /* #endregion */
 
-/* page post navi ページ送りナビ */
-#page-post-navi {
+/* pager post navi ページ送りナビ */
+#pager-post-navi {
   /* displya border settings ボーダー表示設定あり */
-  &.post-navi-default.post-navi-border a {
+  &.post-navi-border a {
     border-top: solid $main-color-midium 1px;
     border-bottom: solid $main-color-midium 1px;
+  }
+  a {
+    &:hover {
+      transition: all 0.3s ease;
+      background-color: $main-color-midium;
+    }
+    .fa {
+      color: $main-color-dark;
+    }
   }
 }
 
@@ -400,7 +401,7 @@ body {
 }
 
 /* Heading 見出し */
-#main {
+#main .entry-content {
   h1 {
     @include linear-gradient();
     color: $white-color;
