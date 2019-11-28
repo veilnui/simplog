@@ -540,6 +540,8 @@ body {
 
 body .mobile-footer-menu-buttons {
   background-color: #7CB342;
+  /* Menu メニュー */
+  /* Search box 検索ボックス */
 }
 
 body .mobile-footer-menu-buttons .menu-button:hover {
@@ -547,5 +549,30 @@ body .mobile-footer-menu-buttons .menu-button:hover {
 }
 
 body .mobile-footer-menu-buttons .menu-button .menu-button-in {
-  color: #C5E1A5;
+  color: white;
+}
+
+body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content {
+  background-color: #F1F8E9;
+}
+
+body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content a {
+  color: #7CB342;
+  margin: 0.5em 0 0.5em 0;
+  border-bottom: solid #9CCC65 1px;
+}
+
+body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content .fa {
+  color: #7CB342;
+}
+
+body .mobile-footer-menu-buttons .search-menu-button .search-edit {
+  border-width: 0 0 2px 0;
+  border-radius: 4px;
+  border-bottom: 2px solid #9CCC65;
+  background-color: #F1F8E9;
+}
+
+body .mobile-footer-menu-buttons .search-menu-button .search-submit {
+  color: #9CCC65;
 }

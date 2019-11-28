@@ -588,7 +588,33 @@ body .mobile-footer-menu-buttons {
       background-color: $main-color-dark;
     }
     .menu-button-in {
-      color: $main-color-light;
+      color: $white-color;
+    }
+  }
+  /* Menu メニュー */
+  .navi-menu-button {
+    .navi-menu-content {
+      background-color: $base-color;
+      a {
+        color: $main-color-dark;
+        margin: 0.5em 0 0.5em 0;
+        border-bottom: solid $main-color-midium 1px;
+      }
+      .fa {
+        color: $main-color-dark;
+      }
+    }
+  }
+  /* Search box 検索ボックス */
+  .search-menu-button {
+    .search-edit {
+      border-width: 0 0 2px 0;
+      border-radius: 4px;
+      border-bottom: 2px solid $main-color-midium;
+      background-color: $hover-color;
+    }
+    .search-submit {
+      color: $main-color-midium;
     }
   }
 }
