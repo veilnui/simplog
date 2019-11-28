@@ -243,28 +243,28 @@ body {
   /* Calendar カレンダー */
   #wp-calendar {
     caption {
+      color: $white-color;
       border-color: $key-color;;
       background-color: $main-color-dark;
     }
     thead tr th {
+      color: $white-color;
       border-color: $key-color;
       background-color: $main-color-midium;
     }
     tbody tr td {
+      color: $white-color;
       border-color: $key-color;
       background-color: $main-color-light;
       &#today {
         background-color: $main-color-midium;
       }
     }
+    tfoot {
+      display: none;
+    }
   }
-}
-/* #endregion */
-/* #region
- * Search box
- * 検索ボックス
- */
-#sidebar, #search-menu-content, #slide-in-sidebar {
+  /* Search box 検索ボックス */
   .search-edit {
     border-width: 0 0 2px 0;
     border-radius: 0;
@@ -285,6 +285,32 @@ body {
     color: $main-color-midium;
   }
 }
+/* #endregion */
+/* #region
+ * Search box
+ * 検索ボックス
+ */
+/*#sidebar, #search-menu-content, #slide-in-sidebar {
+  .search-edit {
+    border-width: 0 0 2px 0;
+    border-radius: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 2px solid $main-color-midium;
+    &:focus {
+      background-color: $base-color;
+      transition: all 0.3s ease;
+      ~ .search-submit {
+        transition: all 0.3s ease;
+        color: $main-color-midium;
+      }
+    }
+  }
+  .search-submit:hover {
+    transition: all 0.3s ease;
+    color: $main-color-midium;
+  }
+}*/
 /* #endregion */
 
 /* #region

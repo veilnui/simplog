@@ -177,6 +177,7 @@ body {
   /* CTA Box CTAボックス */
   /* Profile プロファイル */
   /* Calendar カレンダー */
+  /* Search box 検索ボックス */
 }
 
 #sidebar .cta-box, #slide-in-sidebar .cta-box {
@@ -188,16 +189,19 @@ body {
 }
 
 #sidebar #wp-calendar caption, #slide-in-sidebar #wp-calendar caption {
+  color: white;
   border-color: #D84315;
   background-color: #F4511E;
 }
 
 #sidebar #wp-calendar thead tr th, #slide-in-sidebar #wp-calendar thead tr th {
+  color: white;
   border-color: #D84315;
   background-color: #FF7043;
 }
 
 #sidebar #wp-calendar tbody tr td, #slide-in-sidebar #wp-calendar tbody tr td {
+  color: white;
   border-color: #D84315;
   background-color: #FFAB91;
 }
@@ -206,12 +210,11 @@ body {
   background-color: #FF7043;
 }
 
-/* #endregion */
-/* #region
- * Search box
- * 検索ボックス
- */
-#sidebar .search-edit, #search-menu-content .search-edit, #slide-in-sidebar .search-edit {
+#sidebar #wp-calendar tfoot, #slide-in-sidebar #wp-calendar tfoot {
+  display: none;
+}
+
+#sidebar .search-edit, #slide-in-sidebar .search-edit {
   border-width: 0 0 2px 0;
   border-radius: 0;
   border-top-left-radius: 4px;
@@ -219,21 +222,47 @@ body {
   border-bottom: 2px solid #FF7043;
 }
 
-#sidebar .search-edit:focus, #search-menu-content .search-edit:focus, #slide-in-sidebar .search-edit:focus {
+#sidebar .search-edit:focus, #slide-in-sidebar .search-edit:focus {
   background-color: #FBE9E7;
   transition: all 0.3s ease;
 }
 
-#sidebar .search-edit:focus ~ .search-submit, #search-menu-content .search-edit:focus ~ .search-submit, #slide-in-sidebar .search-edit:focus ~ .search-submit {
+#sidebar .search-edit:focus ~ .search-submit, #slide-in-sidebar .search-edit:focus ~ .search-submit {
   transition: all 0.3s ease;
   color: #FF7043;
 }
 
-#sidebar .search-submit:hover, #search-menu-content .search-submit:hover, #slide-in-sidebar .search-submit:hover {
+#sidebar .search-submit:hover, #slide-in-sidebar .search-submit:hover {
   transition: all 0.3s ease;
   color: #FF7043;
 }
 
+/* #endregion */
+/* #region
+ * Search box
+ * 検索ボックス
+ */
+/*#sidebar, #search-menu-content, #slide-in-sidebar {
+  .search-edit {
+    border-width: 0 0 2px 0;
+    border-radius: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 2px solid $main-color-midium;
+    &:focus {
+      background-color: $base-color;
+      transition: all 0.3s ease;
+      ~ .search-submit {
+        transition: all 0.3s ease;
+        color: $main-color-midium;
+      }
+    }
+  }
+  .search-submit:hover {
+    transition: all 0.3s ease;
+    color: $main-color-midium;
+  }
+}*/
 /* #endregion */
 /* #region
  * Sidebar toc
