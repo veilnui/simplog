@@ -107,19 +107,11 @@ body {
   color: white;
 }
 
-/* #region
- * Breadcrumb
- * パンくずリスト
- */
-#breadcrumb .fa, #breadcrumb a {
+/* Breadcrumb パンくずリスト */
+#breadcrumb span, #breadcrumb a {
   color: #FFCA28;
 }
 
-#breadcrumb .sp .fa {
-  color: #FFCA28;
-}
-
-/* #endregion */
 /* Sidebar サイドバー */
 #sidebar-menu-content h3, #sidebar h3 {
   background-color: #FFCA28;
@@ -279,20 +271,6 @@ body {
   color: #FFCA28;
 }
 
-/* #region
- * Sidebar toc
- * サイドバー目次
- */
-#sidebar .toc-widget-box a, #search-menu-content .toc-widget-box a, #slide-in-sidebar .toc-widget-box a {
-  transition: all 0.3s ease;
-}
-
-#sidebar .toc-widget-box a:hover, #search-menu-content .toc-widget-box a:hover, #slide-in-sidebar .toc-widget-box a:hover {
-  background-color: white;
-  text-decoration: none;
-}
-
-/* #endregion */
 /* related post 関連記事 */
 #related-entries {
   /* displya border settings ボーダー表示設定あり */
@@ -479,23 +457,28 @@ body {
   height: 1px;
 }
 
-/* #region
- * Table
- * テーブル
- */
-#main .wp-block-table tr:nth-child(odd) {
-  background-color: #FFE082;
-}
-
-#main .wp-block-table tr:nth-child(even) {
-  background-color: white;
-}
-
-#main .wp-block-table tr td {
+/* Source code ソースコード */
+#main .wp-block-code, #main .wp-block-cocoon-blocks-code-box {
   border: none;
 }
 
-/* #endregion */
+/* Table テーブル */
+#main .wp-block-table tbody {
+  border: solid #FFCA28 1px;
+}
+
+#main .wp-block-table tbody tr:nth-child(odd) {
+  background-color: #FFE082;
+}
+
+#main .wp-block-table tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+#main .wp-block-table tbody tr td {
+  border: none;
+}
+
 /* Tag タグ */
 #main .tag-link {
   color: #333333;
@@ -507,10 +490,7 @@ body {
   border: none;
 }
 
-/* #region
- * SNS
- * SNSボタン
- */
+/* #region SNS SNSボタン */
 #main .page .sns-share, #main .page .sns-follow {
   display: none;
 }
@@ -552,6 +532,10 @@ body {
 #footer {
   color: white;
   background-color: black;
+}
+
+#footer .site-name-text {
+  color: white;
 }
 
 body .mobile-footer-menu-buttons {

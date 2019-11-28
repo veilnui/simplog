@@ -169,19 +169,12 @@ body {
   }
 }
 
-/* #region
- * Breadcrumb
- * パンくずリスト
- */
+/* Breadcrumb パンくずリスト */
 #breadcrumb {
-  .fa, a {
-    color: $main-color-midium;
-  }
-  .sp .fa {
+  span, a {
     color: $main-color-midium;
   }
 }
-/* #endregion */
 
 /* Sidebar サイドバー */
 #sidebar-menu-content {
@@ -322,21 +315,6 @@ body {
     color: $main-color-midium;
   }
 }
-
-/* #region
- * Sidebar toc
- * サイドバー目次
- */
-#sidebar, #search-menu-content, #slide-in-sidebar {
-  .toc-widget-box a {
-    transition: all 0.3s ease;
-    &:hover {
-      background-color: $white-color;
-      text-decoration: none;
-    }
-  }
-}
-/* #endregion */
 
 /* related post 関連記事 */
 #related-entries {
@@ -500,24 +478,30 @@ body {
   }
 }
 
-/* #region
- * Table
- * テーブル
- */
+/* Source code ソースコード */
+#main {
+  .wp-block-code, .wp-block-cocoon-blocks-code-box {
+    border: none;
+  }
+}
+
+/* Table テーブル */
 #main .wp-block-table {
-  tr {
-    &:nth-child(odd) {
-      background-color: $main-color-light;
-    }
-    &:nth-child(even) {
-      background-color: $white-color;
-    }
-    td {
-      border: none;
+  tbody {
+    border: solid $main-color-midium 1px;
+    tr {
+      &:nth-child(odd) {
+        background-color: $main-color-light;
+      }
+      &:nth-child(even) {
+        background-color: $white-color;
+      }
+      td {
+        border: none;
+      }
     }
   }
 }
-/* #endregion */
 
 /* Tag タグ */
 // Tag generator
@@ -551,10 +535,7 @@ body {
   border: none;
 }
 
-/* #region
- * SNS
- * SNSボタン
- */
+/* #region SNS SNSボタン */
 #main .page {
   .sns-share, .sns-follow {
     display: none;
@@ -596,6 +577,9 @@ body {
 #footer {
   color: $white-color;
   background-color: black;
+  .site-name-text {
+    color: $white-color;
+  }
 }
 body .mobile-footer-menu-buttons {
   background-color: $main-color-dark;
