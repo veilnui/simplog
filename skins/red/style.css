@@ -184,7 +184,7 @@ body {
 
 #sidebar .widget_archive select, #slide-in-sidebar .widget_archive select {
   border: solid #EF5350 1px;
-  background-color: #EF9A9A;
+  background-color: #FFEBEE;
 }
 
 #sidebar #wp-calendar caption, #slide-in-sidebar #wp-calendar caption {
@@ -262,7 +262,7 @@ body {
 }
 
 #related-entries.recb-entry-border a {
-  border: solid #EF5350 1px;
+  border: solid #FFEBEE 1px;
   border-radius: 4px;
 }
 
@@ -282,7 +282,7 @@ body {
 
 #pager-post-navi a:hover {
   transition: all 0.3s ease;
-  background-color: #EF5350;
+  background-color: #FFEBEE;
 }
 
 #pager-post-navi a .fa {
@@ -323,30 +323,29 @@ body {
 }
 
 #main .article .blogcard:hover {
-  background-color: #EF9A9A;
+  background-color: #FFEBEE;
 }
 
-/* #region
- * Previous and Next
- * 前、次へボタン
- */
+/* Previous and Next 前、次へボタン */
 #main .pagination-previous-link, #main .pagination-next-link {
-  color: #FFEBEE;
+  color: white;
   background-color: #EF5350;
   border: none;
   border-radius: 4px;
 }
 
 #main .pagination span {
+  color: white;
   border: none;
   border-radius: 4px;
-  background-color: #E53935;
+  background-color: #EF5350;
 }
 
 #main .pagination a {
+  color: white;
   border: none;
   border-radius: 4px;
-  background-color: #E53935;
+  background-color: #EF5350;
 }
 
 /* #endregion */
@@ -387,7 +386,7 @@ body {
 }
 
 #toc .toc-content .toc-list li a:hover, .toc .toc-content .toc-list li a:hover {
-  color: #EF9A9A;
+  color: #FFEBEE;
 }
 
 /* Heading 見出し */
@@ -457,10 +456,7 @@ body {
 }
 
 /* #endregion */
-/* #region
- * Tag
- * タグ
- */
+/* Tag タグ */
 #main .tag-link {
   color: #333333;
   border: none;
@@ -471,23 +467,12 @@ body {
   border: none;
 }
 
-/* #endregion */
 /* #region
  * SNS
  * SNSボタン
  */
 #main .page .sns-share, #main .page .sns-follow {
   display: none;
-}
-
-/* #endregion */
-/* #region
- * Relation posts
- * 関連記事
- */
-#related-entries a:hover, #pager-post-navi a:hover {
-  transition: all 0.3s ease;
-  background-color: #EF9A9A;
 }
 
 /* #endregion */
@@ -506,7 +491,7 @@ body {
 }
 
 #commentform #comment:focus, #commentform #author:focus, #commentform #email:focus, #commentform #url:focus {
-  background-color: #EF9A9A;
+  background-color: #FFEBEE;
   transition: all 0.3s ease;
 }
 
@@ -517,10 +502,7 @@ body {
   border: none;
 }
 
-/* #region
- * Footer
- * フッター
- */
+/* Footer フッター */
 #footer {
   color: white;
   background-color: black;
@@ -537,5 +519,3 @@ body .mobile-footer-menu-buttons .menu-button:hover {
 body .mobile-footer-menu-buttons .menu-button .menu-button-in {
   color: #EF9A9A;
 }
-
-/* #endregion */
