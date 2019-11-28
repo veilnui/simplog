@@ -562,6 +562,10 @@ body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content a {
   border-bottom: solid #EF5350 1px;
 }
 
+body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content a:hover {
+  background-color: #FFEBEE;
+}
+
 body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content .fa {
   color: #E53935;
 }

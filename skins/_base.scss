@@ -599,6 +599,9 @@ body .mobile-footer-menu-buttons {
         color: $main-color-dark;
         margin: 0.5em 0 0.5em 0;
         border-bottom: solid $main-color-midium 1px;
+        &:hover {
+          background-color: $base-color;
+        }
       }
       .fa {
         color: $main-color-dark;
