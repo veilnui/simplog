@@ -227,9 +227,42 @@ body {
       color: $font-color;
     }
   }
+  /* SNS follow button SNSフォローボタン */
+  .sns-follow {
+    .feedly-button:hover {
+      background-color: #2BB24C;
+      opacity: 0.7;
+    }
+    .rss-button:hover {
+      background-color: #F26522;
+      opacity: 0.7;
+    }
+  }
   /* Profile プロファイル */
   .author-box {
     border-color: $main-color-midium;
+    .feedly-button {
+      border: none;
+      background-color: #2BB24C;
+      color: $white-color;
+    }
+    .rss-button {
+      border: none;
+      background-color: #F26522;
+      color: $white-color;
+    }
+  }
+  /* Comments コメント */
+  .recent-comments {
+    .recent-comment-content {
+      border: solid $main-color-midium 1px;
+      &::before, &::after {
+        border-bottom-color: $main-color-midium;
+      }
+    }
+    a:hover {
+      background-color: $white-color;
+    }
   }
   /* Archives アーカイブ */
   .widget_archive {
@@ -254,10 +287,14 @@ body {
       color: $white-color;
       border-color: $key-color;
       background-color: $main-color-light;
+      a {
+        border-radius: 0;
+        background-color: $main-color-light;
+        color: $white-color;
+      }
       &#today, &#today a {
         background-color: $main-color-midium;
         color: $white-color;
-        text-decoration: none;
       }
     }
     tfoot {
@@ -391,7 +428,6 @@ body {
     }
   }
 }
-/* #endregion */
 
 /* Toc 目次 */
 #toc, .toc {
@@ -527,28 +563,33 @@ body {
 /* #endregion */
 
 /* Comments コメント */
+#comment-area {
+  .reply a {
+    border: none;
+    color: $white-color;
+    background-color: $main-color-midium;
+  }
+}
 #comment-reply-btn {
   color: $white-color;
   background-color: $main-color-midium;
   border-radius: 4px;
   border: none;
 }
-#commentform {
-  #comment, #author, #email, #url{
-    border: none;
-    border-bottom: 2px solid $main-color-midium;
-    border-radius: 0;
-    &:focus {
-      background-color: $hover-color;
-      transition: all 0.3s ease;
-    }
+#comment, #author, #email, #url{
+  border: none;
+  border-bottom: 2px solid $main-color-midium;
+  border-radius: 0;
+  &:focus {
+    background-color: $hover-color;
+    transition: all 0.3s ease;
   }
-  #submit {
-    color: $white-color;
-    background-color: $main-color-midium;
-    border-radius: 4px;
-    border: none;
-  }
+}
+#submit {
+  color: $white-color;
+  background-color: $main-color-midium;
+  border-radius: 4px;
+  border: none;
 }
 
 /* Footer フッター */

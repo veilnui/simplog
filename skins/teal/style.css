@@ -159,7 +159,9 @@ body {
 /* Sidebar widget サイドバーウェジット */
 #sidebar, #slide-in-sidebar {
   /* CTA Box CTAボックス */
+  /* SNS follow button SNSフォローボタン */
   /* Profile プロファイル */
+  /* Comments コメント */
   /* Archives アーカイブ */
   /* Calendar カレンダー */
   /* Search box 検索ボックス */
@@ -178,8 +180,42 @@ body {
   color: #333333;
 }
 
+#sidebar .sns-follow .feedly-button:hover, #slide-in-sidebar .sns-follow .feedly-button:hover {
+  background-color: #2BB24C;
+  opacity: 0.7;
+}
+
+#sidebar .sns-follow .rss-button:hover, #slide-in-sidebar .sns-follow .rss-button:hover {
+  background-color: #F26522;
+  opacity: 0.7;
+}
+
 #sidebar .author-box, #slide-in-sidebar .author-box {
   border-color: #26A69A;
+}
+
+#sidebar .author-box .feedly-button, #slide-in-sidebar .author-box .feedly-button {
+  border: none;
+  background-color: #2BB24C;
+  color: white;
+}
+
+#sidebar .author-box .rss-button, #slide-in-sidebar .author-box .rss-button {
+  border: none;
+  background-color: #F26522;
+  color: white;
+}
+
+#sidebar .recent-comments .recent-comment-content, #slide-in-sidebar .recent-comments .recent-comment-content {
+  border: solid #26A69A 1px;
+}
+
+#sidebar .recent-comments .recent-comment-content::before, #sidebar .recent-comments .recent-comment-content::after, #slide-in-sidebar .recent-comments .recent-comment-content::before, #slide-in-sidebar .recent-comments .recent-comment-content::after {
+  border-bottom-color: #26A69A;
+}
+
+#sidebar .recent-comments a:hover, #slide-in-sidebar .recent-comments a:hover {
+  background-color: white;
 }
 
 #sidebar .widget_archive select, #slide-in-sidebar .widget_archive select {
@@ -205,10 +241,15 @@ body {
   background-color: #80CBC4;
 }
 
+#sidebar #wp-calendar tbody tr td a, #slide-in-sidebar #wp-calendar tbody tr td a {
+  border-radius: 0;
+  background-color: #80CBC4;
+  color: white;
+}
+
 #sidebar #wp-calendar tbody tr td#today, #sidebar #wp-calendar tbody tr td#today a, #slide-in-sidebar #wp-calendar tbody tr td#today, #slide-in-sidebar #wp-calendar tbody tr td#today a {
   background-color: #26A69A;
   color: white;
-  text-decoration: none;
 }
 
 #sidebar #wp-calendar tfoot, #slide-in-sidebar #wp-calendar tfoot {
@@ -348,7 +389,6 @@ body {
   background-color: #26A69A;
 }
 
-/* #endregion */
 /* Toc 目次 */
 #toc, .toc {
   margin: 0;
@@ -477,6 +517,12 @@ body {
 
 /* #endregion */
 /* Comments コメント */
+#comment-area .reply a {
+  border: none;
+  color: white;
+  background-color: #26A69A;
+}
+
 #comment-reply-btn {
   color: white;
   background-color: #26A69A;
@@ -484,18 +530,18 @@ body {
   border: none;
 }
 
-#commentform #comment, #commentform #author, #commentform #email, #commentform #url {
+#comment, #author, #email, #url {
   border: none;
   border-bottom: 2px solid #26A69A;
   border-radius: 0;
 }
 
-#commentform #comment:focus, #commentform #author:focus, #commentform #email:focus, #commentform #url:focus {
+#comment:focus, #author:focus, #email:focus, #url:focus {
   background-color: #E0F2F1;
   transition: all 0.3s ease;
 }
 
-#commentform #submit {
+#submit {
   color: white;
   background-color: #26A69A;
   border-radius: 4px;
