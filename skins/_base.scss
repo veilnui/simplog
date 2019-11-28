@@ -155,23 +155,19 @@ body {
   }
 }
 
-/* #region
- * Go to top button
- * Go to topボタン
- */
+/* Go to top button Go to topボタン */
 #go-to-top .go-to-top-button {
   @include size(56px, 56px);
-  background-color: $key-color;
+  background-color: $main-color-dark;
   border-radius: 50%;
   &:hover .fa {
     transform: rotate(360deg);
     transition: 0.2s;
   }
   .fa {
-    color: $main-color-light;
+    color: $white-color;
   }
 }
-/* #endregion */
 
 /* #region
  * Breadcrumb
@@ -187,10 +183,7 @@ body {
 }
 /* #endregion */
 
-/* #region
- * Sidebar
- * サイドバー
- */
+/* Sidebar サイドバー */
 #sidebar-menu-content {
   h3 {
     background-color: $main-color-midium;
@@ -220,13 +213,19 @@ body {
 #sidebar .widget-sidebar a {
   border-radius: 4px;
 }
-/* #endregion */
 
 /* Sidebar widget サイドバーウェジット */
 #sidebar, #slide-in-sidebar {
   /* CTA Box CTAボックス */
   .cta-box {
     border: solid $main-color-midium 1px;
+    background-color: $white-color;
+    .cta-heading {
+      color: $main-color-dark;
+    }
+    .cta-content {
+      color: $font-color;
+    }
   }
   /* Profile プロファイル */
   .author-box {
@@ -302,6 +301,11 @@ body {
     border-top: solid $main-color-midium 1px;
     border-bottom: solid $main-color-midium 1px;
   }
+  &.post-navi-border {
+    .prev-post~.next-post {
+      border-top: none;
+    }
+  }
   a {
     &:hover {
       transition: all 0.3s ease;
@@ -313,11 +317,7 @@ body {
   }
 }
 
-
-/* #region
- * Blog card
- * ブログカード
- */
+/* blog card ブログカード */
 #main {
   animation: fadeIn 1s ease-out 0s 1 normal;
   // Hover to float
@@ -339,7 +339,11 @@ body {
     border: none;
   }
 }
-/* #endregion */
+
+/* internal and outside blog card 内部、外部ブログカード */
+#main .article .blogcard {
+  border: solid $main-color-midium 1px;
+}
 
 /* #region
  * Previous and Next
