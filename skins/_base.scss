@@ -256,8 +256,10 @@ body {
       color: $white-color;
       border-color: $key-color;
       background-color: $main-color-light;
-      &#today {
+      &#today, &#today a {
         background-color: $main-color-midium;
+        color: $white-color;
+        text-decoration: none;
       }
     }
     tfoot {
@@ -285,33 +287,6 @@ body {
     color: $main-color-midium;
   }
 }
-/* #endregion */
-/* #region
- * Search box
- * 検索ボックス
- */
-/*#sidebar, #search-menu-content, #slide-in-sidebar {
-  .search-edit {
-    border-width: 0 0 2px 0;
-    border-radius: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom: 2px solid $main-color-midium;
-    &:focus {
-      background-color: $base-color;
-      transition: all 0.3s ease;
-      ~ .search-submit {
-        transition: all 0.3s ease;
-        color: $main-color-midium;
-      }
-    }
-  }
-  .search-submit:hover {
-    transition: all 0.3s ease;
-    color: $main-color-midium;
-  }
-}*/
-/* #endregion */
 
 /* #region
  * Sidebar toc
@@ -327,6 +302,16 @@ body {
   }
 }
 /* #endregion */
+
+/* page post navi ページ送りナビ */
+#page-post-navi {
+  /* displya border settings ボーダー表示設定あり */
+  &.post-navi-default.post-navi-border a {
+    border-top: solid $main-color-midium 1px;
+    border-bottom: solid $main-color-midium 1px;
+  }
+}
+
 
 /* #region
  * Blog card
