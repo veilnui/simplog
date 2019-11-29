@@ -139,16 +139,16 @@ body {
   animation: fadeIn 1s ease-out 0s 1 normal;
 }
 
-#sidebar .widget-sidebar a {
-  border-radius: 4px;
-}
-
 /* Sidebar widget サイドバーウェジット */
 #sidebar, #slide-in-sidebar {
   /* RSS feed RSSフィード */
   /* CTA box CTAボックス */
   /* Facebook box Facebookボックス */
   /* SNS follow button SNSフォローボタン */
+  /* Recommended cards おすすめカード */
+  /* PC text PCテキスト*/
+  /* Mobile text Mobileテキスト */
+  /* Navi cards ナビカード */
   /* Profile プロファイル */
   /* Comments コメント */
   /* Archives アーカイブ */
@@ -211,6 +211,38 @@ body {
 #sidebar .widget_sns_follow_buttons .sns-follow .rss-button:hover, #slide-in-sidebar .widget_sns_follow_buttons .sns-follow .rss-button:hover {
   background-color: #F26522;
   opacity: 0.7;
+}
+
+#sidebar .widget_navi_entries a, #slide-in-sidebar .widget_navi_entries a {
+  border-radius: 4px;
+}
+
+#sidebar .widget_navi_entries a:hover, #slide-in-sidebar .widget_navi_entries a:hover {
+  background-color: #E8EAF6;
+  transition: all 0.3s ease;
+}
+
+#sidebar .widget_navi_entries .navi-entry-card-link::after, #slide-in-sidebar .widget_navi_entries .navi-entry-card-link::after {
+  border-top: solid #5C6BC0 2px;
+  border-right: solid #5C6BC0 2px;
+}
+
+#sidebar .widget_navi_entries .border-partition a, #slide-in-sidebar .widget_navi_entries .border-partition a {
+  margin: 0;
+  border-radius: 0;
+  border-bottom: solid #5C6BC0 1px;
+}
+
+#sidebar .widget_navi_entries .border-partition a:first-of-type, #slide-in-sidebar .widget_navi_entries .border-partition a:first-of-type {
+  border-top: solid #5C6BC0 1px;
+}
+
+#sidebar .widget_navi_entries .border-square a, #slide-in-sidebar .widget_navi_entries .border-square a {
+  border: solid #5C6BC0 1px;
+}
+
+#sidebar .widget_navi_entries .card-large-image a:hover, #slide-in-sidebar .widget_navi_entries .card-large-image a:hover {
+  background-color: transparent;
 }
 
 #sidebar .author-box, #slide-in-sidebar .author-box {

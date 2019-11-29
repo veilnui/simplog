@@ -199,9 +199,6 @@ body {
   @extend #sidebar-menu-content;
   animation: fadeIn 1s ease-out 0s 1 normal;
 }
-#sidebar .widget-sidebar a {
-  border-radius: 4px;
-}
 
 /* Sidebar widget サイドバーウェジット */
 #sidebar, #slide-in-sidebar {
@@ -264,7 +261,42 @@ body {
       }
     }
   }
-  
+  /* Recommended cards おすすめカード */
+  /* PC text PCテキスト*/
+  /* Mobile text Mobileテキスト */
+  /* Navi cards ナビカード */
+  .widget_navi_entries {
+    a {
+      border-radius: 4px;
+      &:hover {
+        background-color: $hover-color;
+        transition: all 0.3s ease;
+      }
+    }
+    .navi-entry-card-link::after {
+      border-top: solid $main-color-midium 2px;
+      border-right: solid $main-color-midium 2px;
+    }
+    // ボーダーあり
+    .border-partition {
+      a {
+        margin: 0;
+        border-radius: 0;
+        border-bottom: solid $main-color-midium 1px;
+        &:first-of-type {
+          border-top: solid $main-color-midium 1px;
+        }
+      }
+    }
+    // 囲み枠
+    .border-square a {
+      border: solid $main-color-midium 1px;
+    }
+    // 大きなブロック
+    .card-large-image a:hover {
+      background-color: transparent;
+    }
+  }
   /* Profile プロファイル */
   .author-box {
     border-color: $main-color-midium;
