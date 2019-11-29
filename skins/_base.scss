@@ -194,10 +194,6 @@ body {
       border-bottom: solid 79px transparent;
     }
   }
-  a:hover {
-    transition: all 0.3s ease;
-    background-color: $hover-color;
-  }
 }
 #sidebar {
   @extend #sidebar-menu-content;
@@ -209,6 +205,30 @@ body {
 
 /* Sidebar widget サイドバーウェジット */
 #sidebar, #slide-in-sidebar {
+  /* RSS feed RSSフィード */
+  .widget_rss {
+    .widget-title {
+      .rss-widget-icon {
+        display: none;
+      }
+      .rsswidget {
+        color: $white-color;
+        text-decoration: none;
+        &:hover {
+          background-color: $main-color-midium;
+        }
+      }
+    }
+    ul li:hover {
+      background-color: $hover-color;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+      a:hover {
+        background-color: $hover-color;
+        border-bottom: solid $main-color-midium 1px;
+      }
+    }
+  }
   /* CTA Box CTAボックス */
   .cta-box {
     border: solid $main-color-midium 1px;
