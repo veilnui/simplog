@@ -146,7 +146,8 @@ body {
 /* Sidebar widget サイドバーウェジット */
 #sidebar, #slide-in-sidebar {
   /* RSS feed RSSフィード */
-  /* CTA Box CTAボックス */
+  /* CTA box CTAボックス */
+  /* Facebook box Facebookボックス */
   /* SNS follow button SNSフォローボタン */
   /* Profile プロファイル */
   /* Comments コメント */
@@ -168,36 +169,46 @@ body {
   background-color: #AB47BC;
 }
 
+#sidebar .widget_rss ul li, #slide-in-sidebar .widget_rss ul li {
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
 #sidebar .widget_rss ul li:hover, #slide-in-sidebar .widget_rss ul li:hover {
   background-color: #F3E5F5;
   transition: all 0.3s ease;
-  border-radius: 4px;
 }
 
-#sidebar .widget_rss ul li:hover a:hover, #slide-in-sidebar .widget_rss ul li:hover a:hover {
-  background-color: #F3E5F5;
+#sidebar .widget_rss ul li a, #slide-in-sidebar .widget_rss ul li a {
+  background-color: transparent;
+  border-bottom: solid transparent 1px;
+}
+
+#sidebar .widget_rss ul li a:hover, #slide-in-sidebar .widget_rss ul li a:hover {
   border-bottom: solid #AB47BC 1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-#sidebar .cta-box, #slide-in-sidebar .cta-box {
+#sidebar .widget_cta_box .cta-box, #slide-in-sidebar .widget_cta_box .cta-box {
   border: solid #AB47BC 1px;
   background-color: white;
 }
 
-#sidebar .cta-box .cta-heading, #slide-in-sidebar .cta-box .cta-heading {
+#sidebar .widget_cta_box .cta-heading, #slide-in-sidebar .widget_cta_box .cta-heading {
   color: #8E24AA;
 }
 
-#sidebar .cta-box .cta-content, #slide-in-sidebar .cta-box .cta-content {
+#sidebar .widget_cta_box .cta-content, #slide-in-sidebar .widget_cta_box .cta-content {
   color: #333333;
 }
 
-#sidebar .sns-follow .feedly-button:hover, #slide-in-sidebar .sns-follow .feedly-button:hover {
+#sidebar .widget_sns_follow_buttons .sns-follow .feedly-button:hover, #slide-in-sidebar .widget_sns_follow_buttons .sns-follow .feedly-button:hover {
   background-color: #2BB24C;
   opacity: 0.7;
 }
 
-#sidebar .sns-follow .rss-button:hover, #slide-in-sidebar .sns-follow .rss-button:hover {
+#sidebar .widget_sns_follow_buttons .sns-follow .rss-button:hover, #slide-in-sidebar .widget_sns_follow_buttons .sns-follow .rss-button:hover {
   background-color: #F26522;
   opacity: 0.7;
 }

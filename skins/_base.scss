@@ -219,20 +219,30 @@ body {
         }
       }
     }
-    ul li:hover {
-      background-color: $hover-color;
-      transition: all 0.3s ease;
+    ul li {
       border-radius: 4px;
-      a:hover {
+      padding: 0.5em;
+      &:hover {
         background-color: $hover-color;
-        border-bottom: solid $main-color-midium 1px;
+        transition: all 0.3s ease;
+      }
+      a {
+        background-color: transparent;
+        border-bottom: solid transparent 1px;
+        &:hover {
+          border-bottom: solid $main-color-midium 1px;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
       }
     }
   }
-  /* CTA Box CTAボックス */
-  .cta-box {
-    border: solid $main-color-midium 1px;
-    background-color: $white-color;
+  /* CTA box CTAボックス */
+  .widget_cta_box {
+    .cta-box {
+      border: solid $main-color-midium 1px;
+      background-color: $white-color;
+    }
     .cta-heading {
       color: $main-color-dark;
     }
@@ -240,17 +250,21 @@ body {
       color: $font-color;
     }
   }
+  /* Facebook box Facebookボックス */
   /* SNS follow button SNSフォローボタン */
-  .sns-follow {
-    .feedly-button:hover {
-      background-color: #2BB24C;
-      opacity: 0.7;
-    }
-    .rss-button:hover {
-      background-color: #F26522;
-      opacity: 0.7;
+  .widget_sns_follow_buttons {
+    .sns-follow {
+      .feedly-button:hover {
+        background-color: #2BB24C;
+        opacity: 0.7;
+      }
+      .rss-button:hover {
+        background-color: #F26522;
+        opacity: 0.7;
+      }
     }
   }
+  
   /* Profile プロファイル */
   .author-box {
     border-color: $main-color-midium;
