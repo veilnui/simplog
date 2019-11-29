@@ -559,27 +559,47 @@ body {
       }
     }
   }
-  /* Music 音楽 */
-  /* Search box 検索ボックス */
-  .search-edit {
-    border-width: 0 0 2px 0;
-    border-radius: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom: 2px solid $main-color-midium;
-    &:focus {
-      background-color: $hover-color;
-      transition: all 0.3s ease;
-      ~ .search-submit {
+  /* Recent comment 最近のコメント */
+  /* Recent post 最近の投稿 */
+  .widget_recent_entries {
+    a {
+      border-radius: 4px;
+      &:hover {
+        background-color: $hover-color;
         transition: all 0.3s ease;
-        color: $main-color-midium;
       }
     }
   }
-  .search-submit:hover {
-    transition: all 0.3s ease;
-    color: $main-color-midium;
+  /* Search box 検索ボックス */
+  .widget_search {
+    .search-edit {
+      border-width: 0 0 2px 0;
+      border-radius: 0;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom: 2px solid $main-color-midium;
+      &:focus {
+        background-color: $hover-color;
+        transition: all 0.3s ease;
+        ~ .search-submit {
+          transition: all 0.3s ease;
+          color: $main-color-midium;
+        }
+      }
+    }
+    .search-submit:hover {
+      transition: all 0.3s ease;
+      color: $main-color-midium;
+    }
   }
+  /* Image 画像 */
+  .widget_media_image {
+    .wp-caption {
+      border: none;
+      background-color: transparent;
+    }
+  }
+  /* Music 音楽 */
 }
 
 /* pager post navi ページ送りナビ */
