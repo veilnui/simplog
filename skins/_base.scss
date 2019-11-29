@@ -317,7 +317,82 @@ body {
       }
     }
   }
-  
+  /* Ranking ランキング */
+  .widget_item_ranking {
+    .border-element {
+      border-radius: 4px;
+      border: solid $main-color-midium 1px;
+    }
+  }
+  /* Popular posts 人気記事 */
+  .widget_popular_entries {
+    a {
+      border-radius: 4px;
+      &:hover {
+        background-color: $hover-color;
+        transition: all 0.3s ease;
+      }
+    }
+    .popular-entry-card-link::after {
+      border-top: solid $main-color-midium 2px;
+      border-right: solid $main-color-midium 2px;
+    }
+    // ボーダーあり
+    .border-partition {
+      a {
+        margin: 0;
+        border-radius: 0;
+        border-bottom: solid $main-color-midium 1px;
+        &:first-of-type {
+          border-top: solid $main-color-midium 1px;
+        }
+      }
+    }
+    // 囲み枠
+    .border-square a {
+      border: solid $main-color-midium 1px;
+    }
+    // 大きなブロック
+    .card-large-image a:hover {
+      background-color: transparent;
+    }
+  }
+  /* Ad 広告 */
+  /* PC ad PC広告 */
+  /* Mobile ad Mobile広告 */
+  /* New post 新着記事 */
+  .widget_new_entries {
+    a {
+      border-radius: 4px;
+      &:hover {
+        background-color: $hover-color;
+        transition: all 0.3s ease;
+      }
+    }
+    .new-entry-card-link::after {
+      border-top: solid $main-color-midium 2px;
+      border-right: solid $main-color-midium 2px;
+    }
+    // ボーダーあり
+    .border-partition {
+      a {
+        margin: 0;
+        border-radius: 0;
+        border-bottom: solid $main-color-midium 1px;
+        &:first-of-type {
+          border-top: solid $main-color-midium 1px;
+        }
+      }
+    }
+    // 囲み枠
+    .border-square a {
+      border: solid $main-color-midium 1px;
+    }
+    // 大きなブロック
+    .card-large-image a:hover {
+      background-color: transparent;
+    }
+  }
   /* Comments コメント */
   .recent-comments {
     .recent-comment-content {

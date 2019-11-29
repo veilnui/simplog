@@ -150,6 +150,12 @@ body {
   /* Mobile text Mobileテキスト */
   /* Navi cards ナビカード */
   /* Profile プロファイル */
+  /* Ranking ランキング */
+  /* Popular posts 人気記事 */
+  /* Ad 広告 */
+  /* PC ad PC広告 */
+  /* Mobile ad Mobile広告 */
+  /* New post 新着記事 */
   /* Comments コメント */
   /* Archives アーカイブ */
   /* Calendar カレンダー */
@@ -264,6 +270,75 @@ body {
   border: none;
   background-color: #F26522;
   color: white;
+}
+
+#sidebar .widget_item_ranking .border-element, #slide-in-sidebar .widget_item_ranking .border-element {
+  border-radius: 4px;
+  border: solid #7E57C2 1px;
+}
+
+#sidebar .widget_popular_entries a, #slide-in-sidebar .widget_popular_entries a {
+  border-radius: 4px;
+}
+
+#sidebar .widget_popular_entries a:hover, #slide-in-sidebar .widget_popular_entries a:hover {
+  background-color: #EDE7F6;
+  transition: all 0.3s ease;
+}
+
+#sidebar .widget_popular_entries .popular-entry-card-link::after, #slide-in-sidebar .widget_popular_entries .popular-entry-card-link::after {
+  border-top: solid #7E57C2 2px;
+  border-right: solid #7E57C2 2px;
+}
+
+#sidebar .widget_popular_entries .border-partition a, #slide-in-sidebar .widget_popular_entries .border-partition a {
+  margin: 0;
+  border-radius: 0;
+  border-bottom: solid #7E57C2 1px;
+}
+
+#sidebar .widget_popular_entries .border-partition a:first-of-type, #slide-in-sidebar .widget_popular_entries .border-partition a:first-of-type {
+  border-top: solid #7E57C2 1px;
+}
+
+#sidebar .widget_popular_entries .border-square a, #slide-in-sidebar .widget_popular_entries .border-square a {
+  border: solid #7E57C2 1px;
+}
+
+#sidebar .widget_popular_entries .card-large-image a:hover, #slide-in-sidebar .widget_popular_entries .card-large-image a:hover {
+  background-color: transparent;
+}
+
+#sidebar .widget_new_entries a, #slide-in-sidebar .widget_new_entries a {
+  border-radius: 4px;
+}
+
+#sidebar .widget_new_entries a:hover, #slide-in-sidebar .widget_new_entries a:hover {
+  background-color: #EDE7F6;
+  transition: all 0.3s ease;
+}
+
+#sidebar .widget_new_entries .new-entry-card-link::after, #slide-in-sidebar .widget_new_entries .new-entry-card-link::after {
+  border-top: solid #7E57C2 2px;
+  border-right: solid #7E57C2 2px;
+}
+
+#sidebar .widget_new_entries .border-partition a, #slide-in-sidebar .widget_new_entries .border-partition a {
+  margin: 0;
+  border-radius: 0;
+  border-bottom: solid #7E57C2 1px;
+}
+
+#sidebar .widget_new_entries .border-partition a:first-of-type, #slide-in-sidebar .widget_new_entries .border-partition a:first-of-type {
+  border-top: solid #7E57C2 1px;
+}
+
+#sidebar .widget_new_entries .border-square a, #slide-in-sidebar .widget_new_entries .border-square a {
+  border: solid #7E57C2 1px;
+}
+
+#sidebar .widget_new_entries .card-large-image a:hover, #slide-in-sidebar .widget_new_entries .card-large-image a:hover {
+  background-color: transparent;
 }
 
 #sidebar .recent-comments .recent-comment-content, #slide-in-sidebar .recent-comments .recent-comment-content {
