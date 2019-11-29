@@ -741,15 +741,74 @@ body {
   border: none;
 }
 
-/* Tag タグ */
-#main .tag-link {
-  color: #333333;
-  border: none;
+/* Quote 引用 */
+#main blockquote, #main .wp-block-quote {
+  border: solid #7CB342 1px;
+  background-color: #F1F8E9;
 }
 
-#sidebar .tagcloud a {
-  border-radius: 4px;
-  border: none;
+#main blockquote::before, #main blockquote::after, #main .wp-block-quote::before, #main .wp-block-quote::after {
+  color: #7CB342;
+}
+
+#main blockquote cite, #main .wp-block-quote cite {
+  color: #9CCC65;
+}
+
+/* File ファイル */
+#main .wp-block-file .wp-block-file__button {
+  background-color: #9CCC65;
+}
+
+/* Verse 詩 */
+#main .wp-block-verse {
+  background-color: #F1F8E9;
+  border: solid #7CB342 1px;
+}
+
+/* Calendar カレンダー */
+#main .wp-block-calendar #wp-calendar caption {
+  color: white;
+  border-color: #558B2F;
+  background-color: #7CB342;
+}
+
+#main .wp-block-calendar #wp-calendar thead tr th {
+  color: white;
+  border-color: #558B2F;
+  background-color: #9CCC65;
+}
+
+#main .wp-block-calendar #wp-calendar tbody tr td {
+  color: white;
+  border-color: #558B2F;
+  background-color: #C5E1A5;
+}
+
+#main .wp-block-calendar #wp-calendar tbody tr td a {
+  border-radius: 0;
+  background-color: #C5E1A5;
+  color: white;
+}
+
+#main .wp-block-calendar #wp-calendar tbody tr td#today, #main .wp-block-calendar #wp-calendar tbody tr td#today a {
+  background-color: #9CCC65;
+  color: white;
+}
+
+#main .wp-block-calendar #wp-calendar tfoot {
+  display: none;
+}
+
+/* Archive アーカイブ */
+#main .wp-block-archives select {
+  border: solid #9CCC65 1px;
+  background-color: #F1F8E9;
+}
+
+#main .wp-block-categories select {
+  border: solid #9CCC65 1px;
+  background-color: #F1F8E9;
 }
 
 /* #region SNS SNSボタン */

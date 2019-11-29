@@ -777,36 +777,80 @@ body {
   }
 }
 
-/* Tag タグ */
-// Tag generator
-// タグ生成器
-#main .tag-link {
-  color: $font-color;
-  border: none;
-  // Get key
-  // キー取得
-  @each $base-key, $base-value in $tag {
-    // Store key
-    // キーを設定
-    &[href*= "#{$base-key}"] {
-      // Is value multiple elements?
-      // 複数のプロパティを持つ場合
-      @if length($base-value) != 1 {
-        @each $key, $value in $base-value {
-          #{$key}: $value;
-        }
-      }
-      // Value is not multiple element.
-      // 複数のプロパティを持たない場合
-      @else {
-        #{$tag-default}: $base-value;
-      }
+/* Quote 引用 */
+#main {
+  blockquote, .wp-block-quote {
+    border: solid $main-color-dark 1px;
+    background-color: $hover-color;
+    &::before, &::after {
+      color: $main-color-dark;
+    }
+    cite {
+      color: $main-color-midium;
     }
   }
 }
-#sidebar .tagcloud a {
-  border-radius: 4px;
-  border: none;
+
+/* File ファイル */
+#main .wp-block-file .wp-block-file__button {
+  background-color: $main-color-midium;
+}
+
+/* Verse 詩 */
+#main .wp-block-verse {
+  background-color: $hover-color;
+  border: solid $main-color-dark 1px;
+}
+
+/* Calendar カレンダー */
+#main .wp-block-calendar {
+  #wp-calendar {
+    caption {
+      color: $white-color;
+      border-color: $key-color;;
+      background-color: $main-color-dark;
+    }
+    thead tr th {
+      color: $white-color;
+      border-color: $key-color;
+      background-color: $main-color-midium;
+    }
+    tbody tr td {
+      color: $white-color;
+      border-color: $key-color;
+      background-color: $main-color-light;
+      a {
+        border-radius: 0;
+        background-color: $main-color-light;
+        color: $white-color;
+      }
+      &#today, &#today a {
+        background-color: $main-color-midium;
+        color: $white-color;
+      }
+    }
+    tfoot {
+      display: none;
+    }
+  }
+}
+
+/* Archive アーカイブ */
+#main {
+  .wp-block-archives {
+    select {
+      border: solid $main-color-midium 1px;
+      background-color: $hover-color;
+    }
+  }
+}
+#main {
+  .wp-block-categories {
+    select {
+      border: solid $main-color-midium 1px;
+      background-color: $hover-color;
+    }
+  }
 }
 
 /* #region SNS SNSボタン */
