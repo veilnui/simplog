@@ -298,19 +298,26 @@ body {
     }
   }
   /* Profile プロファイル */
-  .author-box {
-    border-color: $main-color-midium;
-    .feedly-button {
-      border: none;
-      background-color: #2BB24C;
-      color: $white-color;
-    }
-    .rss-button {
-      border: none;
-      background-color: #F26522;
-      color: $white-color;
+  .widget_author_box {
+    .author-box {
+      border-color: $main-color-midium;
+      .author-widget-name {
+        color: $main-color-midium;
+        font-weight: bold;
+      }
+      .feedly-button {
+        border: none;
+        background-color: #2BB24C;
+        color: $white-color;
+      }
+      .rss-button {
+        border: none;
+        background-color: #F26522;
+        color: $white-color;
+      }
     }
   }
+  
   /* Comments コメント */
   .recent-comments {
     .recent-comment-content {

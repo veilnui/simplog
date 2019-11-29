@@ -245,17 +245,22 @@ body {
   background-color: transparent;
 }
 
-#sidebar .author-box, #slide-in-sidebar .author-box {
+#sidebar .widget_author_box .author-box, #slide-in-sidebar .widget_author_box .author-box {
   border-color: #9CCC65;
 }
 
-#sidebar .author-box .feedly-button, #slide-in-sidebar .author-box .feedly-button {
+#sidebar .widget_author_box .author-box .author-widget-name, #slide-in-sidebar .widget_author_box .author-box .author-widget-name {
+  color: #9CCC65;
+  font-weight: bold;
+}
+
+#sidebar .widget_author_box .author-box .feedly-button, #slide-in-sidebar .widget_author_box .author-box .feedly-button {
   border: none;
   background-color: #2BB24C;
   color: white;
 }
 
-#sidebar .author-box .rss-button, #slide-in-sidebar .author-box .rss-button {
+#sidebar .widget_author_box .author-box .rss-button, #slide-in-sidebar .widget_author_box .author-box .rss-button {
   border: none;
   background-color: #F26522;
   color: white;
