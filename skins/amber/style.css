@@ -719,6 +719,101 @@ body {
   height: 1px;
 }
 
+/* ウィジェットブロック */
+#main {
+  /* Calendar カレンダー */
+  /* Archive アーカイブ */
+  /* Category カテゴリー */
+  /* Search box 検索ボックス */
+  /* Tag cloud タグクラウド */
+}
+
+#main .wp-block-calendar #wp-calendar caption {
+  color: white;
+  border-color: #FF8F00;
+  background-color: #FFB300;
+}
+
+#main .wp-block-calendar #wp-calendar thead tr th {
+  color: white;
+  border-color: #FF8F00;
+  background-color: #FFCA28;
+}
+
+#main .wp-block-calendar #wp-calendar tbody tr td {
+  color: white;
+  border-color: #FF8F00;
+  background-color: #FFE082;
+}
+
+#main .wp-block-calendar #wp-calendar tbody tr td a {
+  border-radius: 0;
+  background-color: #FFE082;
+  color: white;
+}
+
+#main .wp-block-calendar #wp-calendar tbody tr td#today, #main .wp-block-calendar #wp-calendar tbody tr td#today a {
+  background-color: #FFCA28;
+  color: white;
+}
+
+#main .wp-block-calendar #wp-calendar tfoot {
+  display: none;
+}
+
+#main .wp-block-archives select {
+  border: solid #FFCA28 1px;
+  background-color: #FFF8E1;
+}
+
+#main .wp-block-categories select {
+  border: solid #FFCA28 1px;
+  background-color: #FFF8E1;
+}
+
+#main .wp-block-search {
+  display: flex;
+  flex-direction: row;
+}
+
+#main .wp-block-search input {
+  width: auto;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #FFCA28 2px;
+}
+
+#main .wp-block-search input:focus {
+  background-color: #FFF8E1;
+  transition: all 0.3s ease;
+}
+
+#main .wp-block-search button {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #FFCA28;
+  border: none;
+  color: white;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+#main .wp-block-tag-cloud a {
+  text-decoration: none;
+  border-radius: 4px;
+  color: #333333;
+}
+
+#main .wp-block-tag-cloud a:hover {
+  background-color: #FFF8E1;
+  transition: all 0.3s ease;
+}
+
+#main .wp-block-tag-cloud a .fa-tag {
+  color: #FFCA28;
+}
+
 /* Source code ソースコード */
 #main .wp-block-code, #main .wp-block-cocoon-blocks-code-box {
   border: none;
@@ -764,51 +859,6 @@ body {
 #main .wp-block-verse {
   background-color: #FFF8E1;
   border: solid #FFB300 1px;
-}
-
-/* Calendar カレンダー */
-#main .wp-block-calendar #wp-calendar caption {
-  color: white;
-  border-color: #FF8F00;
-  background-color: #FFB300;
-}
-
-#main .wp-block-calendar #wp-calendar thead tr th {
-  color: white;
-  border-color: #FF8F00;
-  background-color: #FFCA28;
-}
-
-#main .wp-block-calendar #wp-calendar tbody tr td {
-  color: white;
-  border-color: #FF8F00;
-  background-color: #FFE082;
-}
-
-#main .wp-block-calendar #wp-calendar tbody tr td a {
-  border-radius: 0;
-  background-color: #FFE082;
-  color: white;
-}
-
-#main .wp-block-calendar #wp-calendar tbody tr td#today, #main .wp-block-calendar #wp-calendar tbody tr td#today a {
-  background-color: #FFCA28;
-  color: white;
-}
-
-#main .wp-block-calendar #wp-calendar tfoot {
-  display: none;
-}
-
-/* Archive アーカイブ */
-#main .wp-block-archives select {
-  border: solid #FFCA28 1px;
-  background-color: #FFF8E1;
-}
-
-#main .wp-block-categories select {
-  border: solid #FFCA28 1px;
-  background-color: #FFF8E1;
 }
 
 /* #region SNS SNSボタン */

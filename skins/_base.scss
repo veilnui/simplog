@@ -752,6 +752,96 @@ body {
   }
 }
 
+/* ウィジェットブロック */
+#main {
+  /* Calendar カレンダー */
+  .wp-block-calendar {
+    #wp-calendar {
+      caption {
+        color: $white-color;
+        border-color: $key-color;;
+        background-color: $main-color-dark;
+      }
+      thead tr th {
+        color: $white-color;
+        border-color: $key-color;
+        background-color: $main-color-midium;
+      }
+      tbody tr td {
+        color: $white-color;
+        border-color: $key-color;
+        background-color: $main-color-light;
+        a {
+          border-radius: 0;
+          background-color: $main-color-light;
+          color: $white-color;
+        }
+        &#today, &#today a {
+          background-color: $main-color-midium;
+          color: $white-color;
+        }
+      }
+      tfoot {
+        display: none;
+      }
+    }
+  }
+  /* Archive アーカイブ */
+  .wp-block-archives {
+    select {
+      border: solid $main-color-midium 1px;
+      background-color: $hover-color;
+    }
+  }
+  /* Category カテゴリー */
+  .wp-block-categories {
+    select {
+      border: solid $main-color-midium 1px;
+      background-color: $hover-color;
+    }
+  }
+  /* Search box 検索ボックス */
+  .wp-block-search {
+    display: flex;
+    flex-direction: row;
+    input {
+      width: auto;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: solid $main-color-midium 2px;
+      &:focus {
+        background-color: $hover-color;
+        transition: all 0.3s ease;
+      }
+    }
+    button {
+      display: inline-block;
+      padding: 1em 2em;
+      background-color: $main-color-midium;
+      border: none;
+      color: $white-color;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+  }
+  /* Tag cloud タグクラウド */
+  .wp-block-tag-cloud {
+    a {
+      text-decoration: none;
+      border-radius: 4px;
+      color: $font-color;
+      &:hover {
+        background-color: $hover-color;
+        transition: all 0.3s ease;
+      }
+      .fa-tag {
+        color: $main-color-midium;
+      }
+    }
+  }
+}
+
 /* Source code ソースコード */
 #main {
   .wp-block-code, .wp-block-cocoon-blocks-code-box {
@@ -802,56 +892,9 @@ body {
   border: solid $main-color-dark 1px;
 }
 
-/* Calendar カレンダー */
-#main .wp-block-calendar {
-  #wp-calendar {
-    caption {
-      color: $white-color;
-      border-color: $key-color;;
-      background-color: $main-color-dark;
-    }
-    thead tr th {
-      color: $white-color;
-      border-color: $key-color;
-      background-color: $main-color-midium;
-    }
-    tbody tr td {
-      color: $white-color;
-      border-color: $key-color;
-      background-color: $main-color-light;
-      a {
-        border-radius: 0;
-        background-color: $main-color-light;
-        color: $white-color;
-      }
-      &#today, &#today a {
-        background-color: $main-color-midium;
-        color: $white-color;
-      }
-    }
-    tfoot {
-      display: none;
-    }
-  }
-}
 
-/* Archive アーカイブ */
-#main {
-  .wp-block-archives {
-    select {
-      border: solid $main-color-midium 1px;
-      background-color: $hover-color;
-    }
-  }
-}
-#main {
-  .wp-block-categories {
-    select {
-      border: solid $main-color-midium 1px;
-      background-color: $hover-color;
-    }
-  }
-}
+
+
 
 /* #region SNS SNSボタン */
 #main .page {
