@@ -913,9 +913,10 @@ body {
   }
 }
 
-/* Source code ソースコード */
+/* Cocoon block Cocoonブロック */
 #main {
-  .wp-block-code, .wp-block-cocoon-blocks-code-box {
+  /* Source code ソースコード */
+  .wp-block-cocoon-blocks-code-box {
     border: none;
   }
 }

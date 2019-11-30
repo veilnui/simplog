@@ -898,8 +898,12 @@ body {
   color: #EC407A;
 }
 
-/* Source code ソースコード */
-#main .wp-block-code, #main .wp-block-cocoon-blocks-code-box {
+/* Cocoon block Cocoonブロック */
+#main {
+  /* Source code ソースコード */
+}
+
+#main .wp-block-cocoon-blocks-code-box {
   border: none;
 }
 
