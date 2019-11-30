@@ -669,7 +669,20 @@ body {
   color: #F1F8E9;
 }
 
-/* Heading 見出し */
+/* General block 一般ブロック */
+#main {
+  /* Paragraph 段落 */
+  /* Image 画像 */
+  /* Heading 見出し */
+  /* Garally ギャラリー */
+  /* List リスト */
+  /* Quote 引用 */
+  /* Music 音楽 */
+  /* Cover カバー */
+  /* File ファイル */
+  /* Movie 動画 */
+}
+
 #main .entry-content h1 {
   background: linear-gradient(to right, #7CB342, #9CCC65);
   color: white;
@@ -719,7 +732,78 @@ body {
   height: 1px;
 }
 
-/* ウィジェットブロック */
+#main .wp-block-quote {
+  border: solid #7CB342 1px;
+  background-color: #F1F8E9;
+}
+
+#main .wp-block-quote::before, #main .wp-block-quote::after {
+  color: #7CB342;
+}
+
+#main .wp-block-quote cite {
+  color: #9CCC65;
+}
+
+#main .wp-block-file button {
+  background-color: #9CCC65;
+}
+
+/* Format フォーマット */
+#main {
+  /* Source code ソースコード */
+  /* Classic クラシック */
+  /* Custom HTML カスタムHTML */
+  /* Formatted 整形済み */
+  /* Pull Quote プルクオート*/
+  /* Table テーブル */
+  /* Verse 詩 */
+}
+
+#main .wp-block-code {
+  border: none;
+}
+
+#main .wp-block-preformatted {
+  border: solid #7CB342 1px;
+  background-color: #F1F8E9;
+}
+
+#main blockquote {
+  border: solid #7CB342 1px;
+  background-color: #F1F8E9;
+}
+
+#main blockquote::before, #main blockquote::after {
+  color: #7CB342;
+}
+
+#main blockquote cite {
+  color: #9CCC65;
+}
+
+#main .wp-block-table tbody {
+  border: solid #9CCC65 1px;
+}
+
+#main .wp-block-table tbody tr:nth-child(odd) {
+  background-color: #C5E1A5;
+}
+
+#main .wp-block-table tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+#main .wp-block-table tbody tr td {
+  border: none;
+}
+
+#main .wp-block-verse {
+  background-color: #F1F8E9;
+  border: solid #7CB342 1px;
+}
+
+/* Widget block ウィジェットブロック */
 #main {
   /* Calendar カレンダー */
   /* Archive アーカイブ */
@@ -817,48 +901,6 @@ body {
 /* Source code ソースコード */
 #main .wp-block-code, #main .wp-block-cocoon-blocks-code-box {
   border: none;
-}
-
-/* Table テーブル */
-#main .wp-block-table tbody {
-  border: solid #9CCC65 1px;
-}
-
-#main .wp-block-table tbody tr:nth-child(odd) {
-  background-color: #C5E1A5;
-}
-
-#main .wp-block-table tbody tr:nth-child(even) {
-  background-color: white;
-}
-
-#main .wp-block-table tbody tr td {
-  border: none;
-}
-
-/* Quote 引用 */
-#main blockquote, #main .wp-block-quote {
-  border: solid #7CB342 1px;
-  background-color: #F1F8E9;
-}
-
-#main blockquote::before, #main blockquote::after, #main .wp-block-quote::before, #main .wp-block-quote::after {
-  color: #7CB342;
-}
-
-#main blockquote cite, #main .wp-block-quote cite {
-  color: #9CCC65;
-}
-
-/* File ファイル */
-#main .wp-block-file .wp-block-file__button {
-  background-color: #9CCC65;
-}
-
-/* Verse 詩 */
-#main .wp-block-verse {
-  background-color: #F1F8E9;
-  border: solid #7CB342 1px;
 }
 
 /* #region SNS SNSボタン */

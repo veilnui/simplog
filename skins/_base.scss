@@ -714,45 +714,116 @@ body {
   }
 }
 
-/* Heading 見出し */
-#main .entry-content {
-  h1 {
-    @include linear-gradient();
-    color: $white-color;
-    padding: 1em;
-  }
-  h2, h3, h4, h5, h6 {
-    @include linear-gradient();
-    position: relative;
-    color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -ms-background-clip: text;
-    border: 0;
-    &::after {
+/* General block 一般ブロック */
+#main {
+  /* Paragraph 段落 */
+  /* Image 画像 */
+  /* Heading 見出し */
+  .entry-content {
+    h1 {
       @include linear-gradient();
-      @include pseudo();
-      @include position(auto, 0px, 0px, auto);
+      color: $white-color;
+      padding: 1em;
+    }
+    h2, h3, h4, h5, h6 {
+      @include linear-gradient();
+      position: relative;
+      color: transparent;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -ms-background-clip: text;
+      border: 0;
+      &::after {
+        @include linear-gradient();
+        @include pseudo();
+        @include position(auto, 0px, 0px, auto);
+      }
+    }
+    h2, h3 {
+      padding: 0.5em;
+    }
+    h2::after {
+      @include size(100%, 5px);
+    }
+    h3::after {
+      @include size(100%, 3px);
+    }
+    h4, h5, h6 {
+      padding: 0.25em;
+      &::after {
+        @include size(100%, 1px);
+      }
     }
   }
-  h2, h3 {
-    padding: 0.5em;
-  }
-  h2::after {
-    @include size(100%, 5px);
-  }
-  h3::after {
-    @include size(100%, 3px);
-  }
-  h4, h5, h6 {
-    padding: 0.25em;
-    &::after {
-      @include size(100%, 1px);
+  /* Garally ギャラリー */
+  /* List リスト */
+  /* Quote 引用 */
+  .wp-block-quote {
+    border: solid $main-color-dark 1px;
+    background-color: $hover-color;
+    &::before, &::after {
+      color: $main-color-dark;
     }
+    cite {
+      color: $main-color-midium;
+    }
+  }
+  /* Music 音楽 */
+  /* Cover カバー */
+  /* File ファイル */
+  .wp-block-file button {
+    background-color: $main-color-midium;
+  }
+  /* Movie 動画 */
+}
+/* Format フォーマット */
+#main {
+  /* Source code ソースコード */
+  .wp-block-code {
+    border: none;
+  }
+  /* Classic クラシック */
+  /* Custom HTML カスタムHTML */
+  /* Formatted 整形済み */
+  .wp-block-preformatted {
+    border: solid $main-color-dark 1px;
+    background-color: $hover-color;
+  }
+  /* Pull Quote プルクオート*/
+  blockquote {
+    border: solid $main-color-dark 1px;
+    background-color: $hover-color;
+    &::before, &::after {
+      color: $main-color-dark;
+    }
+    cite {
+      color: $main-color-midium;
+    }
+  }
+  /* Table テーブル */
+  .wp-block-table {
+    tbody {
+      border: solid $main-color-midium 1px;
+      tr {
+        &:nth-child(odd) {
+          background-color: $main-color-light;
+        }
+        &:nth-child(even) {
+          background-color: $white-color;
+        }
+        td {
+          border: none;
+        }
+      }
+    }
+  }
+  /* Verse 詩 */
+  .wp-block-verse {
+    background-color: $hover-color;
+    border: solid $main-color-dark 1px;
   }
 }
-
-/* ウィジェットブロック */
+/* Widget block ウィジェットブロック */
 #main {
   /* Calendar カレンダー */
   .wp-block-calendar {
@@ -848,53 +919,6 @@ body {
     border: none;
   }
 }
-
-/* Table テーブル */
-#main .wp-block-table {
-  tbody {
-    border: solid $main-color-midium 1px;
-    tr {
-      &:nth-child(odd) {
-        background-color: $main-color-light;
-      }
-      &:nth-child(even) {
-        background-color: $white-color;
-      }
-      td {
-        border: none;
-      }
-    }
-  }
-}
-
-/* Quote 引用 */
-#main {
-  blockquote, .wp-block-quote {
-    border: solid $main-color-dark 1px;
-    background-color: $hover-color;
-    &::before, &::after {
-      color: $main-color-dark;
-    }
-    cite {
-      color: $main-color-midium;
-    }
-  }
-}
-
-/* File ファイル */
-#main .wp-block-file .wp-block-file__button {
-  background-color: $main-color-midium;
-}
-
-/* Verse 詩 */
-#main .wp-block-verse {
-  background-color: $hover-color;
-  border: solid $main-color-dark 1px;
-}
-
-
-
-
 
 /* #region SNS SNSボタン */
 #main .page {
