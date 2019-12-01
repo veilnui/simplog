@@ -275,16 +275,81 @@ body {
   font-weight: bold;
 }
 
-#sidebar .widget_author_box .author-box .feedly-button, #slide-in-sidebar .widget_author_box .author-box .feedly-button {
+#sidebar .widget_author_box .author-box .follow-button, #slide-in-sidebar .widget_author_box .author-box .follow-button {
   border: none;
-  background-color: #2BB24C;
   color: white;
 }
 
+#sidebar .widget_author_box .author-box .website-button, #slide-in-sidebar .widget_author_box .author-box .website-button {
+  background-color: #002561;
+}
+
+#sidebar .widget_author_box .author-box .twitter-button, #slide-in-sidebar .widget_author_box .author-box .twitter-button {
+  background-color: #1DA1F2;
+}
+
+#sidebar .widget_author_box .author-box .facebook-button, #slide-in-sidebar .widget_author_box .author-box .facebook-button {
+  background-color: #3B5998;
+}
+
+#sidebar .widget_author_box .author-box .hatebu-button, #slide-in-sidebar .widget_author_box .author-box .hatebu-button {
+  background-color: #2C6EBD;
+}
+
+#sidebar .widget_author_box .author-box .instagram-button, #slide-in-sidebar .widget_author_box .author-box .instagram-button {
+  background-color: #405DE6;
+}
+
+#sidebar .widget_author_box .author-box .youtube-button, #slide-in-sidebar .widget_author_box .author-box .youtube-button {
+  background-color: #CD201F;
+}
+
+#sidebar .widget_author_box .author-box .linkedin-button, #slide-in-sidebar .widget_author_box .author-box .linkedin-button {
+  background-color: #0077B5;
+}
+
+#sidebar .widget_author_box .author-box .note-button, #slide-in-sidebar .widget_author_box .author-box .note-button {
+  background-color: #41C9B4;
+}
+
+#sidebar .widget_author_box .author-box .flickr-button, #slide-in-sidebar .widget_author_box .author-box .flickr-button {
+  background-color: #111111;
+}
+
+#sidebar .widget_author_box .author-box .pinterest-button, #slide-in-sidebar .widget_author_box .author-box .pinterest-button {
+  background-color: #BD081C;
+}
+
+#sidebar .widget_author_box .author-box .line-button, #slide-in-sidebar .widget_author_box .author-box .line-button {
+  background-color: #00C300;
+}
+
+#sidebar .widget_author_box .author-box .slack-button, #slide-in-sidebar .widget_author_box .author-box .slack-button {
+  background-color: #E01563;
+}
+
+#sidebar .widget_author_box .author-box .amazon-button, #slide-in-sidebar .widget_author_box .author-box .amazon-button {
+  background-color: #FF9900;
+}
+
+#sidebar .widget_author_box .author-box .rakuten-room-button, #slide-in-sidebar .widget_author_box .author-box .rakuten-room-button {
+  background-color: #C61E79;
+}
+
+#sidebar .widget_author_box .author-box .github-button, #slide-in-sidebar .widget_author_box .author-box .github-button {
+  background-color: #4078C0;
+}
+
+#sidebar .widget_author_box .author-box .codepen-button, #slide-in-sidebar .widget_author_box .author-box .codepen-button {
+  background-color: #333333;
+}
+
+#sidebar .widget_author_box .author-box .feedly-button, #slide-in-sidebar .widget_author_box .author-box .feedly-button {
+  background-color: #2BB24C;
+}
+
 #sidebar .widget_author_box .author-box .rss-button, #slide-in-sidebar .widget_author_box .author-box .rss-button {
-  border: none;
   background-color: #F26522;
-  color: white;
 }
 
 #sidebar .widget_item_ranking .border-element, #slide-in-sidebar .widget_item_ranking .border-element {

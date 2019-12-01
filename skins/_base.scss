@@ -305,15 +305,63 @@ body {
         color: $main-color-midium;
         font-weight: bold;
       }
-      .feedly-button {
+      .follow-button {
         border: none;
-        background-color: #2BB24C;
         color: $white-color;
       }
+      .website-button {
+        background-color: #002561;
+      }
+      .twitter-button {
+        background-color: #1DA1F2;
+      }
+      .facebook-button {
+        background-color: #3B5998;
+      }
+      .hatebu-button {
+        background-color: #2C6EBD;
+      }
+      .instagram-button {
+        background-color: #405DE6;
+      }
+      .youtube-button {
+        background-color: #CD201F;
+      }
+      .linkedin-button {
+        background-color: #0077B5;
+      }
+      .note-button {
+        background-color: #41C9B4;
+      }
+      .flickr-button {
+        background-color: #111111;
+      }
+      .pinterest-button {
+        background-color: #BD081C;
+      }
+      .line-button {
+        background-color: #00C300;
+      }
+      .slack-button {
+        background-color: #E01563;
+      }
+      .amazon-button {
+        background-color: #FF9900;
+      }
+      .rakuten-room-button {
+        background-color: #C61E79;
+      }
+      .github-button {
+        background-color: #4078C0;
+      }
+      .codepen-button {
+        background-color: #333333;
+      }
+      .feedly-button {
+        background-color: #2BB24C;
+      }
       .rss-button {
-        border: none;
         background-color: #F26522;
-        color: $white-color;
       }
     }
   }
