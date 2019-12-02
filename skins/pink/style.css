@@ -23,9 +23,19 @@
   }
 }
 
-/* background color 背景色 */
+/* all 全体 */
 body {
   background-color: #FCE4EC;
+}
+
+body a:link, body a:visited {
+  color: #D81B60;
+  transition: all 0.3s none;
+}
+
+body a:hover {
+  color: #EC407A;
+  transition: all 0.3s none;
 }
 
 /* footer float prevent フッター浮き上がり防止 */
@@ -641,6 +651,7 @@ body {
 }
 
 #main .entry-card-wrap {
+  color: #333333;
   position: relative;
   z-index: 2;
   background-color: white;
@@ -649,6 +660,7 @@ body {
 }
 
 #main .entry-card-wrap:hover {
+  color: #333333;
   box-shadow: 0 10px 20px -5px black;
   transform: translateY(-2px);
   transition: all 0.3s ease;
