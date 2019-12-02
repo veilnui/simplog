@@ -28,16 +28,6 @@ body {
   background-color: #E8F5E9;
 }
 
-body a:link, body a:visited {
-  color: #43A047;
-  transition: all 0.3s none;
-}
-
-body a:hover {
-  color: #66BB6A;
-  transition: all 0.3s none;
-}
-
 /* footer float prevent フッター浮き上がり防止 */
 #container {
   display: flex;

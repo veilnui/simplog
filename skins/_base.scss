@@ -104,18 +104,6 @@
 /* all 全体 */
 body {
   background-color: $base-color;
-  a {
-    
-    &:link, &:visited {
-      color: $main-color-dark;
-      transition: all 0.3s none;
-    }
-    &:hover {
-      color: $main-color-midium;
-      transition: all 0.3s none;
-    }
-  }
-  
 }
 
 /* footer float prevent フッター浮き上がり防止 */
