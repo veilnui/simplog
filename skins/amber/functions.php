@@ -9,9 +9,6 @@ $_THEME_OPTIONS = [
   'site_key_text_color' => '',
   'site_text_color' => '',
   'site_background_color' => '',
-  'site_link_color' => '',
-  'site_selection_color' => '',
-  'site_selection_background_color' => '',
   'sidebar_position' => 'sidebar_right',
   // header
   'header_container_background_color' => '',
