@@ -675,13 +675,8 @@ body {
 }
 
 /* relation post 関連記事 */
-#related-entries .related-list a {
-  border: none;
-}
-
-#related-entries .related-list a:hover {
-  transition: all 0.3s ease;
-  background-color: #E8F5E9;
+#main .related-list a {
+  background-color: #66BB6A;
 }
 
 /* Previous and Next 前、次へボタン */

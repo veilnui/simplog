@@ -707,13 +707,9 @@ body {
 }
 
 /* relation post 関連記事 */
-#related-entries .related-list {
+#main .related-list {
   a {
-    border: none;
-    &:hover {
-      transition: all 0.3s ease;
-      background-color: $hover-color;
-    }
+    background-color: $main-color-midium;
   }
 }
 
