@@ -674,6 +674,16 @@ body {
   background-color: #FFEBEE;
 }
 
+/* relation post 関連記事 */
+#related-entries .related-list a {
+  border: none;
+}
+
+#related-entries .related-list a:hover {
+  transition: all 0.3s ease;
+  background-color: #FFEBEE;
+}
+
 /* Previous and Next 前、次へボタン */
 #main .pagination-previous-link, #main .pagination-next-link {
   color: white;
