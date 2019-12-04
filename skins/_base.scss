@@ -698,13 +698,13 @@ body {
   }
 }
 /* internal and outside blog card 内部、外部ブログカード */
-#main .article .blogcard {
+/*#main .article .blogcard {
   border: solid $main-color-midium 1px;
   transition: all 0.3s ease;
   &:hover {
     background-color: $hover-color;
   }
-}
+}*/
 
 /* Previous and Next 前、次へボタン */
 #main {
