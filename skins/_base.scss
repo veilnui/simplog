@@ -102,8 +102,8 @@
 // セレクタ
 //---------
 /* all 全体 */
-#container {
-  background-color: $base-color;
+body {
+  background-color: $base-color !important;
 }
 
 /* footer float prevent フッター浮き上がり防止 */

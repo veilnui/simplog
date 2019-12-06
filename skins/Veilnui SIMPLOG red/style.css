@@ -24,8 +24,8 @@
 }
 
 /* all 全体 */
-#container {
-  background-color: #FFEBEE;
+body {
+  background-color: #FFEBEE !important;
 }
 
 /* footer float prevent フッター浮き上がり防止 */
