@@ -436,6 +436,7 @@ body {
 #sidebar .widget_toc .toc-content li a:hover, #slide-in-sidebar .widget_toc .toc-content li a:hover {
   transition: all 0.3s ease;
   color: #29B6F6;
+  text-decoration: none;
 }
 
 #sidebar .widget_related_entries a, #slide-in-sidebar .widget_related_entries a {
@@ -783,7 +784,7 @@ body {
 }
 
 #toc .toc-content .toc-list, .toc .toc-content .toc-list {
-  margin: 0;
+  margin: 0 1em;
 }
 
 #toc .toc-content .toc-list li, .toc .toc-content .toc-list li {
@@ -795,7 +796,8 @@ body {
 }
 
 #toc .toc-content .toc-list li a:hover, .toc .toc-content .toc-list li a:hover {
-  color: #E1F5FE;
+  color: #29B6F6;
+  text-decoration: none;
 }
 
 /* General block 一般ブロック */

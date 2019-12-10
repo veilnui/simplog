@@ -1,3 +1,7 @@
+// Author: veilnui
+// License : GNU GPL v2 or later.
+
+
 //-------------
 // Mixin
 // ミックスイン
@@ -461,6 +465,7 @@ body {
       li a:hover {
         transition: all 0.3s ease;
         color: $main-color-midium;
+        text-decoration: none;
       }
     }
   }
@@ -810,13 +815,14 @@ body {
   .toc-content {
     padding: 0;
     .toc-list {
-      margin: 0;
+      margin: 0 1em;
       li {
         margin: 0;
         a {
           transition: all 0.3s ease;
           &:hover {
-            color: $hover-color;
+            color: $main-color-midium;
+            text-decoration: none;
           }
         }
       }
