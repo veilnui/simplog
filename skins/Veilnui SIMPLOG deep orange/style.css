@@ -136,7 +136,7 @@ body {
 }
 
 #sidebar {
-  animation: fadeIn 1s ease-out 0s 1 normal;
+  /*animation: fadeIn 1s ease-out 0s 1 normal;*/
 }
 
 /* Sidebar widget サイドバーウェジット */
@@ -654,22 +654,48 @@ body {
 
 /* blog card ブログカード */
 #main {
-  animation: fadeIn 1s ease-out 0s 1 normal;
+  /*animation: fadeIn 1s ease-out 0s 1 normal;
+  // Hover to float
+  // ホバーで浮き上がる
+  .entry-card-wrap {
+    color: $font-color;
+    position: relative;
+    z-index: 2;
+    background-color: $white-color;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    &:hover {
+      color: $font-color;
+      box-shadow: 0 10px 20px -5px black;
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
+  }*/
 }
 
-#main .entry-card-wrap {
+#main #list.ecb-entry-border {
+  margin-bottom: 1em;
+}
+
+#main #list.ecb-entry-border a {
+  border-top: solid 1px #FF7043;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+#main #list.ecb-entry-border a:nth-last-child(1) {
+  border-bottom: solid 1px #FF7043;
+}
+
+#main #list .entry-card-wrap {
+  border: none;
   color: #333333;
-  position: relative;
-  z-index: 2;
-  background-color: white;
   border-radius: 4px;
   margin-bottom: 1em;
 }
 
-#main .entry-card-wrap:hover {
-  color: #333333;
-  box-shadow: 0 10px 20px -5px black;
-  transform: translateY(-2px);
+#main #list .entry-card-wrap:hover {
+  background-color: #FBE9E7;
   transition: all 0.3s ease;
 }
 

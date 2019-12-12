@@ -201,7 +201,7 @@ body {
 }
 #sidebar {
   @extend #sidebar-menu-content;
-  animation: fadeIn 1s ease-out 0s 1 normal;
+  /*animation: fadeIn 1s ease-out 0s 1 normal;*/
 }
 
 /* Sidebar widget サイドバーウェジット */
@@ -694,7 +694,7 @@ body {
 
 /* blog card ブログカード */
 #main {
-  animation: fadeIn 1s ease-out 0s 1 normal;
+  /*animation: fadeIn 1s ease-out 0s 1 normal;
   // Hover to float
   // ホバーで浮き上がる
   .entry-card-wrap {
@@ -710,11 +710,34 @@ body {
       transform: translateY(-2px);
       transition: all 0.3s ease;
     }
+  }*/
+  #list {
+    &.ecb-entry-border{
+      a {
+        border-top: solid 1px $main-color-midium;
+        margin-bottom: 0;
+        border-radius: 0;
+        &:nth-last-child(1) {
+          border-bottom: solid 1px $main-color-midium;
+        }
+      }
+      margin-bottom: 1em;
+    } 
+    .entry-card-wrap {
+      border: none;
+      color: $font-color;
+      border-radius: 4px;
+      margin-bottom: 1em;
+      &:hover {
+        background-color: $hover-color;
+        transition: all 0.3s ease;
+      }
+    }
   }
-  .cat-label {
-    @include position(0, 0, auto, auto);
-    border: none;
-  }
+}
+#main .cat-label {
+  @include position(0, 0, auto, auto);
+  border: none;
 }
 /* internal and outside blog card 内部、外部ブログカード */
 #main .article .blogcard {
