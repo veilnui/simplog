@@ -1,6 +1,6 @@
 <?php
 /*
- * Skin Name: veilnui Simplog (amber)
+ * Skin Name: Veilnui Simolog (amber)
  * Description: veilnuiが作成したシンプルなブログスキン（琥珀色）
  * Skin URI: https://simplog.veilnui.org
  * Author: veilnui
