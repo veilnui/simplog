@@ -1,7 +1,9 @@
 # Simplog
 WordPressの無料テーマ「Cocoon」の非公式スキン。
 オープンソースで開発中です。  
-まだベータ版です。
+
+2019.12.25
+バージョン１をリリースしました。
 
 # license
 GNU General Public License v2 or any later
