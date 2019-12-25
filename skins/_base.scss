@@ -856,12 +856,12 @@ body {
   // Paragraph 段落
   // Image 画像
   // Heading 見出し
-  .entry-content {
-    h1 {
+  .entry-header h1.entry-title {
       @include linear-gradient();
       color: $white-color;
       padding: 1em;
-    }
+  }
+  .entry-content {
     h2, h3, h4, h5, h6 {
       @include linear-gradient();
       position: relative;

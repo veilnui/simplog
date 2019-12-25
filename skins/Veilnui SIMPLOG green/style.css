@@ -742,7 +742,7 @@ body {
   text-decoration: none;
 }
 
-#main .entry-content h1 {
+#main .entry-header h1.entry-title {
   background: linear-gradient(to right, #43A047, #66BB6A);
   color: white;
   padding: 1em;
