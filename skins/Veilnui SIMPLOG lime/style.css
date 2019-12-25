@@ -8,10 +8,6 @@
   Version: 1.0
   License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
 */
-/*
- * fade in animation
- * フェードインアニメーション
- */
 @keyframes fadeIn {
   0% {
     transform: translateY(10%);
@@ -23,12 +19,10 @@
   }
 }
 
-/* all 全体 */
 body {
   background-color: #F9FBE7 !important;
 }
 
-/* footer float prevent フッター浮き上がり防止 */
 #container {
   display: flex;
   flex-direction: column;
@@ -43,7 +37,6 @@ body {
   margin-top: auto;
 }
 
-/* Header ヘッダー */
 #header {
   background-color: #C0CA33;
 }
@@ -52,7 +45,6 @@ body {
   color: white;
 }
 
-/* Navigation bar ナビゲーションメニュー */
 #navi {
   background-color: #D4E157;
 }
@@ -90,7 +82,6 @@ body {
   color: white;
 }
 
-/* Go to top button Go to topボタン */
 #go-to-top .go-to-top-button {
   width: 56px;
   height: 56px;
@@ -107,12 +98,10 @@ body {
   color: white;
 }
 
-/* Breadcrumb パンくずリスト */
 #breadcrumb span, #breadcrumb a {
   color: #D4E157;
 }
 
-/* Sidebar サイドバー */
 #sidebar-menu-content h3, #sidebar h3 {
   background-color: #D4E157;
   color: white;
@@ -133,48 +122,6 @@ body {
   border: 0;
   border-left: solid 40px white;
   border-bottom: solid 79px transparent;
-}
-
-#sidebar {
-  /*animation: fadeIn 1s ease-out 0s 1 normal;*/
-}
-
-/* Sidebar widget サイドバーウェジット */
-#sidebar, #slide-in-sidebar {
-  /* RSS feed RSSフィード */
-  /* CTA box CTAボックス */
-  /* Facebook box Facebookボックス */
-  /* SNS follow button SNSフォローボタン */
-  /* Recommended cards おすすめカード */
-  /* PC text PCテキスト*/
-  /* Mobile text Mobileテキスト */
-  /* Navi cards ナビカード */
-  /* Profile プロファイル */
-  /* Ranking ランキング */
-  /* Popular posts 人気記事 */
-  /* Ad 広告 */
-  /* PC ad PC広告 */
-  /* Mobile ad Mobile広告 */
-  /* New post 新着記事 */
-  /* Comments コメント */
-  /* Toc 目次 */
-  /* related post 関連記事 */
-  /* Archives アーカイブ */
-  /* Custom HTML カスタムHTML */
-  /* Category カテゴリー */
-  /* Calendar カレンダー */
-  /* Gallery ギャラリー */
-  /* Tag cloud タグクラウド */
-  /* Text テキスト */
-  /* Navi menu ナビゲーションメニュー */
-  /* Meta data メタデータ */
-  /* Video 動画 */
-  /* Pages 固定ページ */
-  /* Recent comment 最近のコメント */
-  /* Recent post 最近の投稿 */
-  /* Search box 検索ボックス */
-  /* Image 画像 */
-  /* Music 音楽 */
 }
 
 #sidebar .widget_rss .widget-title .rss-widget-icon, #slide-in-sidebar .widget_rss .widget-title .rss-widget-icon {
@@ -629,11 +576,6 @@ body {
   background-color: transparent;
 }
 
-/* pager post navi ページ送りナビ */
-#pager-post-navi {
-  /* displya border settings ボーダー表示設定あり */
-}
-
 #pager-post-navi.post-navi-border a {
   border-top: solid #D4E157 1px;
   border-bottom: solid #D4E157 1px;
@@ -650,27 +592,6 @@ body {
 
 #pager-post-navi a .fa {
   color: #C0CA33;
-}
-
-/* blog card ブログカード */
-#main {
-  /*animation: fadeIn 1s ease-out 0s 1 normal;
-  // Hover to float
-  // ホバーで浮き上がる
-  .entry-card-wrap {
-    color: $font-color;
-    position: relative;
-    z-index: 2;
-    background-color: $white-color;
-    border-radius: 4px;
-    margin-bottom: 1em;
-    &:hover {
-      color: $font-color;
-      box-shadow: 0 10px 20px -5px black;
-      transform: translateY(-2px);
-      transition: all 0.3s ease;
-    }
-  }*/
 }
 
 #main #list.ecb-entry-border {
@@ -707,7 +628,6 @@ body {
   border: none;
 }
 
-/* internal and outside blog card 内部、外部ブログカード */
 #main .article .blogcard {
   border: solid #D4E157 1px;
   transition: all 0.3s ease;
@@ -717,7 +637,6 @@ body {
   background-color: #F9FBE7;
 }
 
-/* Password protect post パスワード保護記事 */
 #main .post-password-form input[type="password"] {
   border-radius: 0;
   border: none;
@@ -741,7 +660,6 @@ body {
   color: white;
 }
 
-/* relation post 関連記事 */
 #related-entries.recb-entry-border a {
   border: none;
   border-top: solid #D4E157 1px;
@@ -763,7 +681,6 @@ body {
   background-color: #F9FBE7;
 }
 
-/* Previous and Next 前、次へボタン */
 #main .pagination-previous-link, #main .pagination-next-link {
   color: white;
   background-color: #D4E157;
@@ -785,7 +702,6 @@ body {
   background-color: #D4E157;
 }
 
-/* Toc 目次 */
 #toc, .toc {
   margin: 0;
   width: 100%;
@@ -824,20 +740,6 @@ body {
 #toc .toc-content .toc-list li a:hover, .toc .toc-content .toc-list li a:hover {
   color: #D4E157;
   text-decoration: none;
-}
-
-/* General block 一般ブロック */
-#main {
-  /* Paragraph 段落 */
-  /* Image 画像 */
-  /* Heading 見出し */
-  /* Garally ギャラリー */
-  /* List リスト */
-  /* Quote 引用 */
-  /* Music 音楽 */
-  /* Cover カバー */
-  /* File ファイル */
-  /* Movie 動画 */
 }
 
 #main .entry-content h1 {
@@ -906,17 +808,6 @@ body {
   background-color: #D4E157;
 }
 
-/* Format フォーマット */
-#main {
-  /* Source code ソースコード */
-  /* Classic クラシック */
-  /* Custom HTML カスタムHTML */
-  /* Formatted 整形済み */
-  /* Pull Quote プルクオート*/
-  /* Table テーブル */
-  /* Verse 詩 */
-}
-
 #main .wp-block-code {
   border: none;
 }
@@ -958,15 +849,6 @@ body {
 #main .wp-block-verse {
   background-color: #F9FBE7;
   border: solid #C0CA33 1px;
-}
-
-/* Widget block ウィジェットブロック */
-#main {
-  /* Calendar カレンダー */
-  /* Archive アーカイブ */
-  /* Category カテゴリー */
-  /* Search box 検索ボックス */
-  /* Tag cloud タグクラウド */
 }
 
 #main .wp-block-calendar #wp-calendar caption {
@@ -1055,22 +937,10 @@ body {
   color: #D4E157;
 }
 
-/* Cocoon block Cocoonブロック */
-#main {
-  /* Source code ソースコード */
-}
-
-#main .wp-block-cocoon-blocks-code-box {
-  border: none;
-}
-
-/* #region SNS SNSボタン */
 #main .page .sns-share, #main .page .sns-follow {
   display: none;
 }
 
-/* #endregion */
-/* Comments コメント */
 #comment-area .reply a {
   border: none;
   color: white;
@@ -1102,7 +972,6 @@ body {
   border: none;
 }
 
-/* Footer フッター */
 #footer {
   color: white;
   background-color: black;
@@ -1114,8 +983,6 @@ body {
 
 body .mobile-footer-menu-buttons {
   background-color: #C0CA33;
-  /* Menu メニュー */
-  /* Search box 検索ボックス */
 }
 
 body .mobile-footer-menu-buttons .menu-button:hover {

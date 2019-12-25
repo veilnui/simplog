@@ -1,4 +1,13 @@
 <?php
+/*!
+  Skin Name: Veilnui Simolog (deep purple)
+  Description: veilnuiが作成したシンプルなブログスキン（濃紫色）
+  Skin URI: https://simplog.veilnui.org
+  Author: veilnui
+  Author URI: https://veilnui.net/
+  Version: 1.0
+  License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
+*/
 /**
  * Skin control
  * スキン制御
