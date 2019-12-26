@@ -1,6 +1,6 @@
 <?php
 /*!
-  Skin Name: Veilnui Simolog (deep orange)
+  Skin Name: Veilnui Simplog (deep orange)
   Description: veilnuiが作成したシンプルなブログスキン（濃いオレンジ色）
   Skin URI: https://simplog.veilnui.org
   Author: veilnui

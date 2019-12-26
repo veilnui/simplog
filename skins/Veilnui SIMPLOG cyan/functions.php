@@ -1,6 +1,6 @@
 <?php
 /*!
-  Skin Name: Veilnui Simolog (cyan)
+  Skin Name: Veilnui Simplog (cyan)
   Description: veilnuiが作成したシンプルなブログスキン（シアン）
   Skin URI: https://simplog.veilnui.org
   Author: veilnui

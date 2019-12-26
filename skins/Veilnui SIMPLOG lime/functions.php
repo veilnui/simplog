@@ -1,6 +1,6 @@
 <?php
 /*!
-  Skin Name: Veilnui Simolog (lime)
+  Skin Name: Veilnui Simplog (lime)
   Description: veilnuiが作成したシンプルなブログスキン（ライム）
   Skin URI: https://simplog.veilnui.org
   Author: veilnui
