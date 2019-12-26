@@ -4,7 +4,7 @@
  * Description: veilnuiが作成したシンプルなブログスキン（青色）
  * Skin URI: https://simplog.veilnui.org
  * Author: veilnui
- * Author URI: https://veilnui.net/Version: 1.0
+ * Author URI: https://veilnui.net/Version: 1.1
  * License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
  */
 /**
