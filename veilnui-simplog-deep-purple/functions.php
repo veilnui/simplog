@@ -1,12 +1,12 @@
 <?php
 /*!
-  Skin Name: Veilnui Simplog (light blue)
-  Description: veilnuiが作成したシンプルなブログスキン（青色）
+  Skin Name: Veilnui Simplog (deep purple)
+  Description: veilnuiが作成したシンプルなブログスキン（濃紫色）
   Skin URI: https://simplog.veilnui.org
   Author: veilnui
   Author URI: https://veilnui.net/
   Screenshot URI: images/image.png
-  Version: 1.1
+  Version: 1.1.1
   License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
 */
 /**
