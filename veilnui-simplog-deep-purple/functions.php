@@ -1,7 +1,7 @@
 <?php
 /*!
   Skin Name: Veilnui Simplog (deep purple)
-  Description: veilnuiが作成したシンプルなブログスキン（濃紫色）
+  Description: Cocoonテーマのシンプルなスキン（濃紫色）
   Skin URI: https://simplog.veilnui.org
   Author: veilnui
   Author URI: https://veilnui.net/

@@ -1,7 +1,7 @@
 <?php
 /*!
   Skin Name: Veilnui Simplog (teal)
-  Description: veilnuiが作成したシンプルなブログスキン（鴨の羽色）
+  Description: Cocoonテーマのシンプルなスキン（鴨の羽色）
   Skin URI: https://simplog.veilnui.org
   Author: veilnui
   Author URI: https://veilnui.net/

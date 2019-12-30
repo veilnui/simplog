@@ -1,7 +1,7 @@
 <?php
 /*!
   Skin Name: Veilnui Simplog (indigo)
-  Description: veilnuiが作成したシンプルなブログスキン（群青色）
+  Description: Cocoonテーマのシンプルなスキン（群青色）
   Skin URI: Veilnui Simplog
   Author: veilnui
   Author URI: https://veilnui.net/
