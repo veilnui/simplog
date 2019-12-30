@@ -78,6 +78,14 @@ body {
   transform: scale(1, 1);
 }
 
+#navi .fa-angle-down {
+  color: white;
+}
+
+#navi .fa-angle-down:hover {
+  color: white;
+}
+
 #navi .sub-menu {
   background-color: #26A69A;
   color: white;

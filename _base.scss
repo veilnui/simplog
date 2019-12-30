@@ -151,6 +151,12 @@ body {
       transform: scale(1, 1);
     }
   }
+  .fa-angle-down {
+    color: $white-color;
+    &:hover {
+      color: $white-color;
+    }
+  }
   .sub-menu {
     background-color: $main-color-midium;
     color: $white-color;
