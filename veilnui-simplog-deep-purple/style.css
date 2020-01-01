@@ -6,7 +6,7 @@
   Author: veilnui
   Author URI: https://veilnui.net/
   Screenshot URI: images/image.png
-  Version: 1.1.1
+  Version: 1.1.4
   License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
 */
 @keyframes fadeIn {
@@ -38,20 +38,50 @@ body {
   margin-top: auto;
 }
 
-#header {
+#header-container {
   background-color: #5E35B1;
 }
 
-#header .tagline, #header .site-name-text {
+#header-container .tagline, #header-container .site-name-text {
   color: white;
 }
 
-#navi {
+#header-container #header {
+  background-color: #5E35B1;
+}
+
+#header-container .hlt-top-menu {
+  background-color: #5E35B1;
+}
+
+#header-container .hlt-top-menu #navi {
+  background-color: #5E35B1;
+}
+
+#header-container .hlt-top-menu #navi a:hover {
+  background-color: #5E35B1;
+}
+
+#header-container .hlt-top-menu #navi .sub-menu {
+  background-color: #5E35B1;
+  color: white;
+}
+
+#header-container .hlt-center-logo {
   background-color: #7E57C2;
 }
 
-#navi a:hover {
+#header-container .hlt-center-logo #navi {
   background-color: #7E57C2;
+}
+
+#header-container .hlt-center-logo #navi a:hover {
+  background-color: #7E57C2;
+}
+
+#header-container .hlt-center-logo #navi .sub-menu {
+  background-color: #7E57C2;
+  color: white;
 }
 
 #navi .item-label {
@@ -83,11 +113,6 @@ body {
 }
 
 #navi .fa-angle-down:hover {
-  color: white;
-}
-
-#navi .sub-menu {
-  background-color: #7E57C2;
   color: white;
 }
 
@@ -1003,7 +1028,7 @@ body .mobile-footer-menu-buttons .menu-button .menu-button-in {
 }
 
 body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content {
-  background-color: #EDE7F6;
+  background-color: white;
 }
 
 body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content a {
@@ -1013,7 +1038,7 @@ body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content a {
 }
 
 body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content a:hover {
-  background-color: #EDE7F6;
+  background-color: white;
 }
 
 body .mobile-footer-menu-buttons .navi-menu-button .navi-menu-content .fa {

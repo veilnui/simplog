@@ -6,7 +6,7 @@
   Author: veilnui
   Author URI: https://veilnui.net/
   Screenshot URI: images/image.png
-  Version: 1.1.1
+  Version: 1.1.4
   License: http://www.gnu.org/licenses/gpl-2.0.html/ GPL v2 or later
 */
 /**
