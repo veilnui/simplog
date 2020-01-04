@@ -161,7 +161,7 @@ body {
   }
 }
 #navi {
-  .item-label {
+  a {
     position: relative;
     color: $white-color;
     &::after {
@@ -858,7 +858,7 @@ body {
     color: $white-color;
     &::after {
       color: $white-color;
-      transition: text-decoration 0.3s;
+      text-decoration: none;
     }
   }
   .toc-content {
@@ -1121,6 +1121,16 @@ body {
   background-color: black;
   .site-name-text {
     color: $white-color;
+  }
+  #navi-footer {
+    a {
+      background-color: black;
+      color: $white-color;
+      &:hover {
+        background-attachment: black;
+        color: $white-color;
+      }
+    }
   }
 }
 body .mobile-footer-menu-buttons {
