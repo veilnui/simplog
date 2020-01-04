@@ -1015,11 +1015,6 @@ body {
   color: white;
 }
 
-#footer #navi-footer a {
-  background-color: black;
-  color: white;
-}
-
 #footer #navi-footer a:hover {
   background-attachment: black;
   color: white;
