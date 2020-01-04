@@ -190,11 +190,11 @@ body {
   @include size(56px, 56px);
   background-color: $main-color-dark;
   border-radius: 50%;
-  &:hover .fa {
+  &:hover span {
     transform: rotate(360deg);
     transition: 0.2s;
   }
-  .fa {
+  span {
     color: $white-color;
   }
 }
@@ -1124,9 +1124,11 @@ body {
   }
   #navi-footer {
     a {
+      color: $white-color;
+      background-color: black;
       &:hover {
-        background-attachment: black;
-        color: $white-color;
+        background-color: $white-color;
+        color: black;
       }
     }
   }

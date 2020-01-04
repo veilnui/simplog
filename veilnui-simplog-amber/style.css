@@ -123,12 +123,12 @@ body {
   border-radius: 50%;
 }
 
-#go-to-top .go-to-top-button:hover .fa {
+#go-to-top .go-to-top-button:hover span {
   transform: rotate(360deg);
   transition: 0.2s;
 }
 
-#go-to-top .go-to-top-button .fa {
+#go-to-top .go-to-top-button span {
   color: white;
 }
 
@@ -1015,9 +1015,14 @@ body {
   color: white;
 }
 
-#footer #navi-footer a:hover {
-  background-attachment: black;
+#footer #navi-footer a {
   color: white;
+  background-color: black;
+}
+
+#footer #navi-footer a:hover {
+  background-color: white;
+  color: black;
 }
 
 body .mobile-footer-menu-buttons {
