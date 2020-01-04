@@ -108,6 +108,10 @@ body {
   transform: scale(1, 1);
 }
 
+#navi a .item-description {
+  color: white;
+}
+
 #navi .fa-angle-down {
   color: white;
 }
