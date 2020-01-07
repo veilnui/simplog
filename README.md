@@ -1,15 +1,6 @@
-# Simplog
-WordPressの無料テーマ「Cocoon」の非公式スキン。
+# Veilnui Simplog
+WordPressのCocoonテーマのスキン。
 オープンソースで開発中です。  
 
-2019.12.25
-バージョン１をリリースしました。
-
 # license
-GNU General Public License v2 or any later
-
-https://www.gnu.org/licenses/gpl-2.0.en.html  
-https://www.gnu.org/licenses/gpl-3.0.en.html  
-https://www.gnu.org/licenses/agpl-3.0.en.html
-
-
+GNU General Public License v2 or later
