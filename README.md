@@ -1,5 +1,5 @@
 # Veilnui Simplog
-WordPressのCocoonテーマのスキン。
+WordPressのCocoonテーマのシンプルなスキン。
 オープンソースで開発中です。  
 
 # license
