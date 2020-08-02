@@ -1,0 +1,16 @@
+.header {
+  color: white;
+  background: #304ffe;
+}
+
+.footer {
+  color: white;
+  background: black;
+}
+
+.footer-sns-link {
+  transition: all 0.3s ease;
+}
+.footer-sns-link.blogger:hover {
+  background: #ff5722;
+}

@@ -1,0 +1,107 @@
+// header
+.header {
+  color: white;
+  background: #304ffe;
+}
+
+// footer
+.footer {
+  color: white;
+  background: black;
+}
+.footer-sns-link {
+  transition: all .3s ease;
+  &.blogger:hover {
+    background: #ff5722;
+  }
+  &.codepen:hover {
+
+  }
+  &.devto:hover {
+
+  }
+  &.facebook:hover {
+
+  }
+  &.feedly:hover {
+
+  }
+  &.github:hover {
+
+  }
+  &.gitlab:hover {
+
+  }
+  &.googlescholar:hover {
+
+  }
+  &.hatebu:hover {
+
+  }
+  &.instagram:hover {
+
+  }
+  &.line:hover {
+
+  }
+  &.linkedin:hover {
+
+  }
+  &.mastodon:hover {
+
+  }
+  &.medium:hover {
+
+  }
+  &.pinterest:hover {
+
+  }
+  &.pixiv:hover {
+
+  }
+  &.pocket:hover {
+
+  }
+  &.snapchat:hover {
+
+  }
+  &.stackexchange:hover {
+
+  }
+  &.stackoverflow:hover {
+
+  }
+  &.steam:hover {
+
+  }
+  &.telegram:hover {
+
+  }
+  &.tiktok:hover {
+
+  }
+  &.tumblr:hover {
+
+  }
+  &.twitch:hover {
+
+  }
+  &.twitter:hover {
+
+  }
+  &.website:hover {
+
+  }
+  &.weibo:hover {
+
+  }
+  &.whatsapp:hover {
+
+  }
+  &.youtube:hover {
+    background: #FF0000;
+  }
+  &.zhihu:hover {
+
+  }
+}
