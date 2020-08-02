@@ -1,7 +1,107 @@
+@import "./color/brandcolor";
+
 // header
 .header {
   color: white;
   background: #304ffe;
+}
+
+// author widget
+.widget-author-sns-link {
+  color: white;
+  &.blogger {
+    background: $blogger;
+  }
+  &.codepen {
+    background: $codepen;
+  }
+  &.devto {
+    background: $devto;
+  }
+  &.facebook {
+    background: $facebook;
+  }
+  &.feedly {
+    background: $feedly;
+  }
+  &.github {
+    background: $github;
+  }
+  &.gitlab {
+    background: $gitlab;
+  }
+  &.google-scholar {
+    background: $googlescholar;
+  }
+  &.hatebu {
+    background: $hatebu;
+  }
+  &.instagram {
+    background: $instagram;
+  }
+  &.line {
+    background: $line;
+  }
+  &.linkedin {
+    background: $linkedin;
+  }
+  &.mastodon {
+    background: $mastodon;
+  }
+  &.medium {
+    background: $medium;
+  }
+  &.pinterest {
+    background: $pinterest;
+  }
+  &.pixiv {
+    background: $pixiv;
+  }
+  &.pocket {
+    background: $pocket;
+  }
+  &.snapchat {
+    background: $snapchat;
+  }
+  &.stack-exchange {
+    background: $stackexchange;
+  }
+  &.stack-overflow {
+    background: $stackoverflow;
+  }
+  &.steam {
+    background: $steam;
+  }
+  &.telegram {
+    background: $telegram;
+  }
+  &.tiktok {
+    background: $tiktok;
+  }
+  &.tumblr {
+    background: $tumblr;
+  }
+  &.twitch {
+    background: $twitch;
+  }
+  &.twitter {
+    background: $twitter;
+  }
+  &.website {
+
+  }
+  &.weibo {
+    background: $weibo;
+  }
+  &.whatsapp {
+    background: $whatsapp;
+  }
+  &.youtube {
+    background: $youtube;
+  }
+  &.zhihu {
+    background: $zhihu;
+  }
 }
 
 // footer
@@ -12,96 +112,96 @@
 .footer-sns-link {
   transition: all .3s ease;
   &.blogger:hover {
-    background: #ff5722;
+    background: $blogger;
   }
   &.codepen:hover {
-
+    background: $codepen;
   }
   &.devto:hover {
-
+    background: $devto;
   }
   &.facebook:hover {
-
+    background: $facebook;
   }
   &.feedly:hover {
-
+    background: $feedly;
   }
   &.github:hover {
-
+    background: $github;
   }
   &.gitlab:hover {
-
+    background: $gitlab;
   }
-  &.googlescholar:hover {
-
+  &.google-scholar:hover {
+    background: $googlescholar;
   }
   &.hatebu:hover {
-
+    background: $hatebu;
   }
   &.instagram:hover {
-
+    background: $instagram;
   }
   &.line:hover {
-
+    background: $line;
   }
   &.linkedin:hover {
-
+    background: $linkedin;
   }
   &.mastodon:hover {
-
+    background: $mastodon;
   }
   &.medium:hover {
-
+    background: $medium;
   }
   &.pinterest:hover {
-
+    background: $pinterest;
   }
   &.pixiv:hover {
-
+    background: $pixiv;
   }
   &.pocket:hover {
-
+    background: $pocket;
   }
   &.snapchat:hover {
-
+    background: $snapchat;
   }
-  &.stackexchange:hover {
-
+  &.stack-exchange:hover {
+    background: $stackexchange;
   }
-  &.stackoverflow:hover {
-
+  &.stack-overflow:hover {
+    background: $stackoverflow;
   }
   &.steam:hover {
-
+    background: $steam;
   }
   &.telegram:hover {
-
+    background: $telegram;
   }
   &.tiktok:hover {
-
+    background: $tiktok;
   }
   &.tumblr:hover {
-
+    background: $tumblr;
   }
   &.twitch:hover {
-
+    background: $twitch;
   }
   &.twitter:hover {
-
+    background: $twitter;
   }
   &.website:hover {
 
   }
   &.weibo:hover {
-
+    background: $weibo;
   }
   &.whatsapp:hover {
-
+    background: $whatsapp;
   }
   &.youtube:hover {
-    background: #FF0000;
+    background: $youtube;
   }
   &.zhihu:hover {
-
+    background: $zhihu;
   }
 }
