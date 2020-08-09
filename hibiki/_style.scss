@@ -1,12 +1,71 @@
-@import "./color/brandcolor";
+@import "./assets/brandcolor";
+
+// container
+.container {
+  background: $container-background;
+}
 
 // header
 .header {
+  color: $header-color;
+  background: $header-background;
+}
+
+// notice
+.notice {
+  color: $notice-color;
+  background: $notice-background;
+}
+
+// main
+.main {
+  background: $main-background;
+}
+
+// main breadcrumb
+.main-breadcrumb-item {
+  color: $main-breadcrumb-color;
+  &:not(:last-child)::after {
+    content: ">";
+    color: $main-breadcrumb-after;
+  }
+}
+
+.main-title {
   color: white;
   background: #304ffe;
 }
+.main-content {
+  h2, h3 {
+    background: #304ffe;
+    color: white;
+  }
+  pre {
+    background: black;
+    color: white;
+  }
+  dt {
+    color: $main-dt-color;
+    background: $main-dt-background-color;
+  }
+  dd {
+    color: $main-dd-color;
+    background: $main-dd-background-color;
+  }
+}
 
-// author widget
+// widget
+.widget {
+  background: white;
+}
+.widget-title {
+  background: #304ffe;
+  color: white;
+}
+
+// sns
+.main-sns-follow-link,
+.main-sns-share-link,
 .widget-author-sns-link {
   color: white;
   &.blogger {
