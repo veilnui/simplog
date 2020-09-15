@@ -1,0 +1,2 @@
+# simplog
+Cocoonテーマのシンプルなスキン
